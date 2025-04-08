@@ -21,9 +21,17 @@
         <legend>Financial Information (optional)</legend>
         <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number"></label>
         <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number"></label>
+        <label for="investment-experience">Investment Experience (optional)</label>
+        <select id="investment-experience" name="investment-experience">
+            <option value="none">None</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+        </select>
     </fieldset>
     <fieldset>
-        <legend>Type of Assets Invested: (required)</legend>
+        <legend>What assets do you currently own?</legend>
         <label for="stocks">Stocks<input id="stocks" name="stocks" type="checkbox"></label>
         <label for="bonds">Bonds<input id="bonds" name="bonds" type="checkbox"></label>
         <label for="real-estate">Real Estate<input id="real-estate" name="real-estate" type="checkbox"></label>
@@ -32,7 +40,7 @@
         <label for="other-assets">Other<input id="other-assets" name="other-assets" type="text"></label>
     </fieldset>
     <fieldset>
-        <legend>Level of Risk: (required)</legend>
+        <legend>What is your level of risk?</legend>
         <label for="low-risk">Low<input id="low-risk" name="risk-level" type="radio" value="low"></label>
         <label for="medium-risk">Medium<input id="medium-risk" name="risk-level" type="radio" value="medium"></label>
         <label for="high-risk">High<input id="high-risk" name="risk-level" type="radio" value="high"></label>
@@ -40,7 +48,37 @@
         <label for="no-risk">No Risk<input id="no-risk" name="risk-level" type="radio" value="no-risk"></label>
     </fieldset>
     <fieldset>
-        <legend>Receive personalize portfolio recommendations</legend>
+        <legend>What is your investment goal?</legend>
+        <label for="short-term">Short Term<input id="short-term" name="investment-goals" type="checkbox"></label>
+        <label for="medium-term">Medium Term<input id="medium-term" name="investment-goals" type="checkbox"></label>
+        <label for="long-term">Long Term<input id="long-term" name="investment-goals" type="checkbox"></label>
+        <label for="retirement">Retirement<input id="retirement" name="investment-goals" type="checkbox"></label>
+        <label for="wealth-creation">Wealth Creation<input id="wealth-creation" name="investment-goals" type="checkbox"></label>    
+        <label for="other-goals">Other<input id="other-goals" name="other-goals" type="text"></label>
+    </fieldset>
+    <fieldset>
+        <legend>How often do you check your investments?</legend>
+        <label for="daily">Daily<input id="daily" name="investment-check-frequency" type="radio" value="daily"></label>
+        <label for="weekly">Weekly<input id="weekly" name="investment-check-frequency" type="radio" value="weekly"></label>
+        <label for="monthly">Monthly<input id="monthly" name="investment-check-frequency" type="radio" value="monthly"></label>
+        <label for="quarterly">Quarterly<input id="quarterly" name="investment-check-frequency" type="radio" value="quarterly"></label>
+        <label for="yearly">Yearly<input id="yearly" name="investment-check-frequency" type="radio" value="yearly"></label>
+        <label for="never">Never<input id="never" name="investment-check-frequency" type="radio" value="never"></label>
+    </fieldset>
+    <fieldset>
+        <legend>How do you prefer to receive investment information?</legend>
+        <label for="email">E-mail<input id="email" name="email" type="checkbox"></label>
+        <label for="phone">Phone<input id="phone" name="phone" type="checkbox"></label>
+        <label for="text-message">Text Message<input id="text-message" name="text-message" type="checkbox"></label>
+        <label for="in-person">In Person<input id="in-person" name="in-person" type="checkbox"></label>
+        <label for="video-call">Video Call<input id="video-call" name="video-call" type="checkbox"></label>
+        <label for="webinar">Webinar<input id="webinar" name="webinar" type="checkbox"></label>
+        <label for="newsletter">Newsletter<input id="newsletter" name="newsletter" type="checkbox"></label>
+        <label for="social-media">Social Media<input id="social-media" name="social-media" type="checkbox"></label>
+        <label for="other-methods">Other<input id="other-methods" name="other-methods" type="text"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Do you want to receive personalize portfolio recommendations?</legend>
         <label for="email">E-mail<input id="email" name="email" type="email" pattern="[a-zA-Z0-9,.!@#$%^&*()-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></label>
         <label for="password">Password<input id="password" name="password" type="password" pattern="[A-Za-z\d@$!%*?&]{12,}"></label>
     </fieldset>
