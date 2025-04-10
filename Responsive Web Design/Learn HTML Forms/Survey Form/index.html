@@ -9,15 +9,14 @@
 <body>
     <h1 id="title">Investment Survey</h1>
     <p id="description">Thank you for participating in this investment risk profile survey. Your responses will help us understand your investment preferences, risk tolerance, and financial goals so we can recommend a portfolio tailored to your needs.</p>
-<form>
+<form id="survey-form"> 
     <fieldset>
         <legend>General Information (optional)</legend>
-        <label for="first-name">First Name<input id="first-name" name="first-name" type="text" required></label>
-        <label for="last-name">Last Name<input id="last-name" name="last-name" type="text" required></label>
+        <label for="name">Name<input id="name" name="name" type="text" required></label>
         <label for="age">Age (optional)<input id="age" name="age" type="number" min="18" max="110"></label>
         <label for="occupation">Occupation (optional)<input id="occupation" name="occupation" type="text"></label>
     </fieldset>
-    <fieldset>
+    <fieldset id="financial-information">
         <legend>Financial Information (optional)</legend>
         <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number"></label>
         <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number"></label>
@@ -30,22 +29,28 @@
             <option value="expert">Expert</option>
         </select>
     </fieldset>
-    <fieldset>
+    <fieldset id="investment-assets">
         <legend>What assets do you currently own?</legend>
-        <label for="stocks">Stocks<input id="stocks" name="stocks" type="checkbox"></label>
-        <label for="bonds">Bonds<input id="bonds" name="bonds" type="checkbox"></label>
-        <label for="real-estate">Real Estate<input id="real-estate" name="real-estate" type="checkbox"></label>
-        <label for="mutual-funds">Mutual Funds<input id="mutual-funds" name="mutual-funds" type="checkbox"></label>
-        <label for="cryptocurrency">Cryptocurrency<input id="cryptocurrency" name="cryptocurrency" type="checkbox"></label>
-        <label for="other-assets">Other: <input id="other-assets" name="other-assets" type="text"></label>
+        <select id="assets" name="assets">
+            <option value="none">None</option>
+            <option value="stocks">Stocks</option>
+            <option value="bonds">Bonds</option>
+            <option value="real-estate">Real Estate</option>
+            <option value="mutual-funds">Mutual Funds</option>
+            <option value="cryptocurrency">Cryptocurrency</option>
+            <option value="commodities">Commodities</option>
+            <option value="other">Other</option>
     </fieldset>
-    <fieldset>
+    <fieldset id="investment-risk">
         <legend>What is your level of risk?</legend>
-        <label for="low-risk">Low<input id="low-risk" name="risk-level" type="radio" value="low"></label>
-        <label for="medium-risk">Medium<input id="medium-risk" name="risk-level" type="radio" value="medium"></label>
-        <label for="high-risk">High<input id="high-risk" name="risk-level" type="radio" value="high"></label>
-        <label for="very-high-risk">Very High<input id="very-high-risk" name="risk-level" type="radio" value="very-high"></label>
-        <label for="no-risk">No Risk<input id="no-risk" name="risk-level" type="radio" value="no-risk"></label>
+        <select id="risk-level" name="risk-level">
+            <option value="none">None</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="very-high">Very High</option>
+            <option value="no-risk">No Risk</option>
+        </select>
     </fieldset>
     <fieldset>
         <legend>What is your investment goal?</legend>
