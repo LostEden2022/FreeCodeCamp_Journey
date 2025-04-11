@@ -32,7 +32,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#name, #age, #occupation {
+#name, #age, #occupation, #annual-income, #net-worth, #investment-experience, #assets {
     width: 100%;
     padding: 3px;
     margin: 1px 0;
@@ -43,31 +43,20 @@ body {
     font-size: 1em;
 }
 
-#financial-information {
+#assets {
     width: 100%;
     padding: 3px;
     margin: 1px 0;
     border: 1px solid #f5f6f7;
-    border-radius: 4px;
     background-color: #0a0a27;
     font-size: 1em;
 }
 
-#investment-assets {
-    width: 100%;
-    padding: 3px;
-    margin: 1px 0;
-    border: 1px solid #f5f6f7;
-    border-radius: 4px;
-    background-color: #0a0a27;
-    font-size: 1em;
-}
 #investment-risk {
     width: 100%;
     padding: 3px;
     margin: 1px 0;
     border: 1px solid #f5f6f7;
-    border-radius: 4px;
     background-color: #0a0a27;
     font-size: 1em;
 }
