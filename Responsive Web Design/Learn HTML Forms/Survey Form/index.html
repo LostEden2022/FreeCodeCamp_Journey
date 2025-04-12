@@ -10,18 +10,21 @@
     <h1 id="title">Investment Survey</h1>
     <p id="description">Thank you for participating in this investment risk profile survey. Your responses will help us understand your investment preferences, risk tolerance, and financial goals so we can recommend a portfolio tailored to your needs.</p>
 <form id="survey-form"> 
+    <div>
     <fieldset>
         <legend>General Information (optional)</legend>
         <label for="name">Name<input id="name" name="name" type="text" required></label>
-        <label for="age">Age (optional)<input id="age" name="age" type="number" min="18" max="110"></label>
-        <label for="occupation">Occupation (optional)<input id="occupation" name="occupation" type="text"></label>
+        <label for="age">Age<input id="age" name="age" type="number" min="18" max="110"></label>
+        <label for="occupation">Occupation<input id="occupation" name="occupation" type="text"></label>
     </fieldset>
+    </div>
+    <div>
     <fieldset>
-        <legend>Financial Information (optional)</legend>
+        <legend>Financial Information</legend>
         <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number"></label>
-        <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number"></label>
-        <label for="investment-experience">Investment Experience (optional)</label>
-        <select id="investment-experience" name="investment-experience">
+        <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number" pattern="[0-9]"></label>
+        <label for="investment-experience">Investment Experience</label>
+        <select id="investment-experience" name="investment-experience" type="dropdown">
             <option value="none">None</option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
@@ -29,51 +32,76 @@
             <option value="expert">Expert</option>
         </select>
     </fieldset>
+    </div>
+    <div>
     <fieldset>
         <legend>What assets do you currently own?</legend>
-        <label for="assets">Assets</label>
-        <select id="assets" name="assets">
-            <option value="none">None</option>
+        <select id="assets-owned" name="assets-owned">
+            <option value="">Select One</option>
+            <option value="none">None</option>  
             <option value="stocks">Stocks</option>
             <option value="bonds">Bonds</option>
             <option value="real-estate">Real Estate</option>
             <option value="mutual-funds">Mutual Funds</option>
             <option value="cryptocurrency">Cryptocurrency</option>
-            <option value="commodities">Commodities</option>
-            <option value="other">Other</option>
+            <option value="other-assets">Other Assets</option>
+        </select>
     </fieldset>
-    <fieldset id="investment-risk">
+    </div>
+    <div>
+    <fieldset>
+        <legend>What is your investment horizon?</legend>
+        <select id="investment-horizon" name="investment-horizon" type="rad">
+            <option value="">Select One</option>
+            <option value="short-term">Short Term (0-2 years)</option>
+            <option value="medium-term">Medium Term (3-5 years)</option>
+            <option value="long-term">Long Term (6+ years)</option>
+            <option value="retirement">Retirement (20+ years)</option>
+            <option value="other-horizon">No Planned Horizons</option>
+        </select>
+    </fieldset>
+   </div>
+   <div>
+    <fieldset>
         <legend>What is your level of risk?</legend>
         <select id="risk-level" name="risk-level">
+            <option value="">Select One</option>
             <option value="none">None</option>
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
-            <option value="very-high">Very High</option>
-            <option value="no-risk">No Risk</option>
+            <option value="aggressive">Aggressive</option>
         </select>
     </fieldset>
+    </div>
     <fieldset>
         <legend>What is your investment goal?</legend>
-        <label for="short-term">Short Term<input id="short-term" name="investment-goals" type="checkbox"></label>
-        <label for="medium-term">Medium Term<input id="medium-term" name="investment-goals" type="checkbox"></label>
-        <label for="long-term">Long Term<input id="long-term" name="investment-goals" type="checkbox"></label>
-        <label for="retirement">Retirement<input id="retirement" name="investment-goals" type="checkbox"></label>
-        <label for="wealth-creation">Wealth Creation<input id="wealth-creation" name="investment-goals" type="checkbox"></label>    
-        <label for="other-goals">Other: <input id="other-goals" name="other-goals" type="text"></label>
+        <select id="investment-goal" name="investment-goal">
+            <option value="">Select One</option>
+            <option value="none">None</option>
+            <option value="wealth-creation">Wealth Creation</option>
+            <option value="retirement">Retirement</option>
+            <option value="education-fund">Education Fund</option>
+            <option value="emergency-fund">Emergency Fund</option>
+            <option value="other-goals">Other Goals</option>
+        </select>
     </fieldset>
-    <fieldset>
+    </div>
+    <div>
+    <fieldset id="investment-check">
         <legend>How often do you check your investments?</legend>
-        <label for="daily">Daily<input id="daily" name="investment-check-frequency" type="radio" value="daily"></label>
-        <label for="weekly">Weekly<input id="weekly" name="investment-check-frequency" type="radio" value="weekly"></label>
-        <label for="monthly">Monthly<input id="monthly" name="investment-check-frequency" type="radio" value="monthly"></label>
-        <label for="quarterly">Quarterly<input id="quarterly" name="investment-check-frequency" type="radio" value="quarterly"></label>
-        <label for="yearly">Yearly<input id="yearly" name="investment-check-frequency" type="radio" value="yearly"></label>
-        <label for="never">Never<input id="never" name="investment-check-frequency" type="radio" value="never"></label>
+            <label for="daily">Daily<input id="daily" name="investment-check-frequency" type="radio" value="daily"></label>
+            <label for="weekly">Weekly<input id="weekly" name="investment-check-frequency" type="radio" value="weekly"></label>
+            <label for="monthly">Monthly<input id="monthly" name="investment-check-frequency" type="radio" value="monthly"></label>
+            <label for="quarterly">Quarterly<input id="quarterly" name="investment-check-frequency" type="radio" value="quarterly"></label>
+            <label for="yearly">Yearly<input id="yearly" name="investment-check-frequency" type="radio" value="yearly"></label>
+            <label for="never">Never<input id="never" name="investment-check-frequency" type="radio" value="never"></label>
     </fieldset>
-    <fieldset>
+    </div>
+    <div>
+    <fieldset id="investment-info">
         <legend>How do you prefer to receive investment information?</legend>
-        <label for="email">E-mail<input id="email" name="email" type="checkbox"></label>
+        <label for="email">E-mail<input id="via-email" name="email" type="checkbox"></label>
         <label for="phone">Phone<input id="phone" name="phone" type="checkbox"></label>
         <label for="text-message">Text Message<input id="text-message" name="text-message" type="checkbox"></label>
         <label for="in-person">In Person<input id="in-person" name="in-person" type="checkbox"></label>
@@ -83,11 +111,14 @@
         <label for="social-media">Social Media<input id="social-media" name="social-media" type="checkbox"></label>
         <label for="other-methods">Other: <input id="other-methods" name="other-methods" type="text"></label>
     </fieldset>
+    </div>
+    <div>
     <fieldset>
-        <legend>Do you want to receive personalize portfolio recommendations?</legend>
-        <label for="email">E-mail<input id="email" name="email" type="email" pattern="[a-zA-Z0-9,.!@#$%^&*()-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></label>
+        <legend>Want a personalize portfolio recommendation? Create an Account.</legend>
+        <label for="e-mail">E-mail<input id="email" name="email" type="email" pattern="[a-zA-Z0-9,.!@#$%^&*()-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></label>
         <label for="password">Password<input id="password" name="password" type="password" pattern="[A-Za-z\d@$!%*?&]{12,}"></label>
     </fieldset>
+    </div>
 </form>
 </body>
 </html>
