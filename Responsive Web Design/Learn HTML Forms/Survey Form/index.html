@@ -12,10 +12,12 @@
 <form id="survey-form"> 
     <div>
     <fieldset>
-        <legend>General Information (optional)</legend>
-        <label for="name">Name<input id="name" name="name" type="text" required></label>
-        <label for="age">Age<input id="age" name="age" type="number" min="18" max="110"></label>
-        <label for="occupation">Occupation<input id="occupation" name="occupation" type="text"></label>
+        <legend>General Information</legend>
+        <label for="name" id="name-label">Name
+            <input id="name" name="name" type="text" placeholder="enter your name" required></label>
+        </label>
+        <label for="age" id="number-label">Age<input id="number" name="number" type="number" min="18" max="110" placeholder="enter your age"></label>
+        <label for="occupation">Occupation (Optional)<input id="occupation" name="occupation" type="text" placeholder="enter your current occupation"></label>
     </fieldset>
     </div>
     <div>
@@ -25,6 +27,7 @@
         <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number" pattern="[0-9]"></label>
         <label for="investment-experience">Investment Experience</label>
         <select id="investment-experience" name="investment-experience" type="dropdown">
+            <option value="">please choose one</option>
             <option value="none">None</option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
@@ -36,7 +39,7 @@
     <div>
     <fieldset>
         <legend>What assets do you currently own?</legend>
-        <select id="assets-owned" name="assets-owned">
+        <select id="dropdown" name="assets-owned">
             <option value="">Select One</option>
             <option value="none">None</option>  
             <option value="stocks">Stocks</option>
@@ -51,7 +54,7 @@
     <div>
     <fieldset>
         <legend>What is your investment horizon?</legend>
-        <select id="investment-horizon" name="investment-horizon" type="rad">
+        <select id="dropdown" name="investment-horizon" type="rad">
             <option value="">Select One</option>
             <option value="short-term">Short Term (0-2 years)</option>
             <option value="medium-term">Medium Term (3-5 years)</option>
@@ -64,7 +67,7 @@
    <div>
     <fieldset>
         <legend>What is your level of risk?</legend>
-        <select id="risk-level" name="risk-level">
+        <select id="dropdown" name="risk-level">
             <option value="">Select One</option>
             <option value="none">None</option>
             <option value="low">Low</option>
@@ -76,7 +79,7 @@
     </div>
     <fieldset>
         <legend>What is your investment goal?</legend>
-        <select id="investment-goal" name="investment-goal">
+        <select id="dropdown" name="investment-goal">
             <option value="">Select One</option>
             <option value="none">None</option>
             <option value="wealth-creation">Wealth Creation</option>
@@ -101,7 +104,7 @@
     <div>
     <fieldset id="investment-info">
         <legend>How do you prefer to receive investment information?</legend>
-        <label for="email">E-mail<input id="via-email" name="email" type="checkbox"></label>
+        <label for="email">E-mail<input id="via-email" name="via-email" type="checkbox"></label>
         <label for="phone">Phone<input id="phone" name="phone" type="checkbox"></label>
         <label for="text-message">Text Message<input id="text-message" name="text-message" type="checkbox"></label>
         <label for="in-person">In Person<input id="in-person" name="in-person" type="checkbox"></label>
@@ -115,8 +118,8 @@
     <div>
     <fieldset>
         <legend>Want a personalize portfolio recommendation? Create an Account.</legend>
-        <label for="e-mail">E-mail<input id="email" name="email" type="email" pattern="[a-zA-Z0-9,.!@#$%^&*()-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></label>
-        <label for="password">Password<input id="password" name="password" type="password" pattern="[A-Za-z\d@$!%*?&]{12,}"></label>
+        <label for="email" id="email-label">Email<input id="email" name="email" type="email" pattern="[a-zA-Z0-9,.!@#$%^&*()-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="enter your email" required></label>
+        <label for="password">Password<input id="password" name="password" type="password" pattern="[A-Za-z\d@$!%*?&]{12,}" placeholder="enter your password" required></label>
     </fieldset>
     </div>
 </form>
