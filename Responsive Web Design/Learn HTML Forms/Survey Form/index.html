@@ -26,8 +26,11 @@
         <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number"></label>
         <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number" pattern="[0-9]"></label>
         <label for="investment-experience">Investment Experience</label>
-        <select id="investment-experience" name="investment-experience" type="dropdown">
-            <option value="">please choose one</option>
+    </fieldset>
+    <fieldset>
+        <legend>What is your level of investment experience?</legend>
+        <select id="dropdown" name="investment-experience" type="dropdown">
+            <option value="">Select One</option>
             <option value="none">None</option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
@@ -115,6 +118,13 @@
         <label for="other-methods">Other: <input id="other-methods" name="other-methods" type="text"></label>
     </fieldset>
     </div>
+    <div>    
+    <legend>What do you know about the F.I.R.E movement?</legend>
+    <label for="bio">
+        <textarea id="bio" name="bio" rows="4" cols="72" placeholder="I like coding on the beach..."></textarea>
+      </label>
+    </fieldset>
+    </div>    
     <div>
     <fieldset>
         <legend>Want a personalize portfolio recommendation? Create an Account.</legend>
@@ -122,6 +132,17 @@
         <label for="password">Password<input id="password" name="password" type="password" pattern="[A-Za-z\d@$!%*?&]{12,}" placeholder="enter your password" required></label>
     </fieldset>
     </div>
-</form>
+    <div>
+    <fieldset>   
+    <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox"required name="terms-and-conditions"> I accept the <a href="www.nmap.org">terms and conditions</a>.
+      </label>
+    </fieldset> 
+    </div>
+    <div>
+      <input id="submit" type="submit" value="Submit" />
+    </fieldset> 
+    </div>
+</form>3
 </body>
 </html>
