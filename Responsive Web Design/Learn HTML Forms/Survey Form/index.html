@@ -107,24 +107,46 @@
     <div>
     <fieldset id="investment-info">
         <legend>How do you prefer to receive investment information?</legend>
-        <label for="email">E-mail<input id="via-email" name="via-email" type="checkbox"></label>
-        <label for="phone">Phone<input id="phone" name="phone" type="checkbox"></label>
-        <label for="text-message">Text Message<input id="text-message" name="text-message" type="checkbox"></label>
-        <label for="in-person">In Person<input id="in-person" name="in-person" type="checkbox"></label>
-        <label for="video-call">Video Call<input id="video-call" name="video-call" type="checkbox"></label>
-        <label for="webinar">Webinar<input id="webinar" name="webinar" type="checkbox"></label>
-        <label for="newsletter">Newsletter<input id="newsletter" name="newsletter" type="checkbox"></label>
-        <label for="social-media">Social Media<input id="social-media" name="social-media" type="checkbox"></label>
-        <label for="other-methods">Other: <input id="other-methods" name="other-methods" type="text"></label>
+        <label for="email">E-mail<input id="via-email" name="via-email" type="checkbox"></label><br>
+        <label for="phone">Phone<input id="phone" name="phone" type="checkbox"></label><br>
+        <label for="text-message">Text Message<input id="text-message" name="text-message" type="checkbox"></label><br>
+        <label for="in-person">In Person<input id="in-person" name="in-person" type="checkbox"></label><br>
+        <label for="video-call">Video Call<input id="video-call" name="video-call" type="checkbox"></label><br>
+        <label for="webinar">Webinar<input id="webinar" name="webinar" type="checkbox"></label><br>
+        <label for="newsletter">Newsletter<input id="newsletter" name="newsletter" type="checkbox"></label><br>
+        <label for="social-media">Social Media<input id="social-media" name="social-media" type="checkbox"></label><br>
+        <label for="other-methods">Other mediums: <input id="other-methods" name="other-methods" type="text"></label><br>
     </fieldset>
     </div>
-    <div>    
-    <legend>What do you know about the F.I.R.E movement?</legend>
+    <div>   
+    <fieldset>
+    <legend>Tell me what you know about the F.I.R.E movement?</legend>
     <label for="bio">
-        <textarea id="bio" name="bio" rows="4" cols="72" placeholder="I like coding on the beach..."></textarea>
+        <textarea id="bio" name="bio" rows="2" cols="65" placeholder="in a sentence or two ... "></textarea>
       </label>
     </fieldset>
     </div>    
+    <div>
+    <fieldset>
+        <legend>Check which F.I.R.E. type you prefer</legend>
+        <input type="checkbox" name="value" attribute="value1" id="value1" value="lean-fire">
+        <label> Lean F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value2"id="value2" value="fat-fire">
+        <label> Fat F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value3"id="value3" value="barista-fire">
+        <label> Barista F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value4"id="value4" value="coast-fire">
+        <label> Coast F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value5"id="value5" value="slow-fire">
+        <label> Slow F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value6"id="value6" value="chill-fire">
+        <label> Chill F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value7"id="value7" value="other-fire">
+        <label> Other F.I.R.E.</label><br>
+        <input type="checkbox" name="value" attribute="value8" id="value8" value="none">
+        <label> None</label><br>
+    </fieldset>
+    </div>
     <div>
     <fieldset>
         <legend>Want a personalize portfolio recommendation? Create an Account.</legend>
@@ -135,7 +157,7 @@
     <div>
     <fieldset>   
     <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox"required name="terms-and-conditions"> I accept the <a href="www.nmap.org">terms and conditions</a>.
+        <input class="inline" id="terms-and-conditions" type="checkbox" name="value" attribute="value9" id="value9" value="terms-and-conditions"required name="terms-and-conditions"> I accept the <a href="www.nmap.org">terms and conditions</a>.
       </label>
     </fieldset> 
     </div>
@@ -143,6 +165,5 @@
       <input id="submit" type="submit" value="Submit" />
     </fieldset> 
     </div>
-</form>3
-</body>
+</form>
 </html>
