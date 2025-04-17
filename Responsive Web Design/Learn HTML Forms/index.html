@@ -1,45 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
-      <fieldset>
-        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-      </fieldset>
-      <fieldset>
-        <legend>Account type (required)</legend>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
-      </fieldset>
-      <fieldset>
-        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </select>
-        </label>
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-        </label>
-      </fieldset>
-      <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Investment Survey</h1>
+    <p id="description">Thank you for participating in this investment risk profile survey. Your responses will help us understand your investment preferences, risk tolerance, and financial goals so we can recommend a portfolio tailored to your needs.</p>
+<form id="survey-form"> 
+    <div>
+    <fieldset>
+        <legend>General Information</legend>
+        <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="enter your name" required></label>
+        <label for="age" id="number-label">Age<input id="number" name="number" type="number" min="18" max="110" placeholder="enter your age"></label>
+        <label for="occupation" id="occupation-label">Occupation (Optional)<input id="occupation" name="occupation" type="text" placeholder="enter your current occupation"></label>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset>
+        <legend>Financial Information</legend>
+        <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number"></label>
+        <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number" pattern="[0-9]"></label>
+        <label for="investment-experience">Investment Experience</label>
+    </fieldset>
+    <fieldset>
+        <legend>What is your level of investment experience?</legend>
+        <select id="dropdown" name="investment-experience" type="dropdown">
+            <option value="">Select One</option>
+            <option value="none">None</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+        </select>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset>
+        <legend>What assets do you currently own?</legend>
+        <select id="dropdown" name="assets-owned">
+            <option value="">Select One</option>
+            <option value="none">None</option>  
+            <option value="stocks">Stocks</option>
+            <option value="bonds">Bonds</option>
+            <option value="real-estate">Real Estate</option>
+            <option value="mutual-funds">Mutual Funds</option>
+            <option value="cryptocurrency">Cryptocurrency</option>
+            <option value="other-assets">Other Assets</option>
+        </select>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset>
+        <legend>What is your investment horizon?</legend>
+        <select id="dropdown" name="investment-horizon" type="rad">
+            <option value="">Select One</option>
+            <option value="short-term">Short Term (0-2 years)</option>
+            <option value="medium-term">Medium Term (3-5 years)</option>
+            <option value="long-term">Long Term (6+ years)</option>
+            <option value="retirement">Retirement (20+ years)</option>
+            <option value="other-horizon">No Planned Horizons</option>
+        </select>
+    </fieldset>
+   </div>
+   <div>
+    <fieldset>
+        <legend>What is your level of risk?</legend>
+        <select id="dropdown" name="risk-level">
+            <option value="">Select One</option>
+            <option value="none">None</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="aggressive">Aggressive</option>
+        </select>
+    </fieldset>
+    </div>
+    <fieldset>
+        <legend>What is your investment goal?</legend>
+        <select id="dropdown" name="investment-goal">
+            <option value="">Select One</option>
+            <option value="none">None</option>
+            <option value="wealth-creation">Wealth Creation</option>
+            <option value="retirement">Retirement</option>
+            <option value="education-fund">Education Fund</option>
+            <option value="emergency-fund">Emergency Fund</option>
+            <option value="other-goals">Other Goals</option>
+        </select>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset id="investment-check">
+        <legend>How often do you check your investments?</legend>
+            <label for="daily">Daily<input id="daily" name="investment-check-frequency" type="radio" value="daily"></label>
+            <label for="weekly">Weekly<input id="weekly" name="investment-check-frequency" type="radio" value="weekly"></label>
+            <label for="monthly">Monthly<input id="monthly" name="investment-check-frequency" type="radio" value="monthly"></label>
+            <label for="quarterly">Quarterly<input id="quarterly" name="investment-check-frequency" type="radio" value="quarterly"></label>
+            <label for="yearly">Yearly<input id="yearly" name="investment-check-frequency" type="radio" value="yearly"></label>
+            <label for="never">Never<input id="never" name="investment-check-frequency" type="radio" value="never"></label>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset id="investment-info">
+        <legend>How do you prefer to receive investment information?</legend>
+        <input id="via-email" name="via-email" type="checkbox" attribute="via-email" value="via-email">
+        <label for="email">E-mail</label><br>
+        <input id="phone" name="phone" type="checkbox" attribute="phone" value="phone">
+        <label for="phone">Phone</label><br>
+        <input id="text-message" name="text-message" type="checkbox" attribute="text-message" value="text-message">
+        <label for="text-message">Text Message</label><br>
+        <input id="in-person" name="in-person" type="checkbox" attribute="in-person" value="in-person">
+        <label for="in-person">In Person</label><br>
+        <input id="video-call" name="video-call" type="checkbox">
+        <label for="video-call">Video Call</label><br>
+        <input id="webinar" name="webinar" type="checkbox"attribute="webinar" value="webinar">
+        <label for="webinar">Webinar</label><br>
+        <input id="newsletter" name="newsletter" type="checkbox" attribute="newsletter" value="newsletter">
+        <label for="newsletter">Newsletter</label><br>
+        <input id="social-media" name="social-media" type="checkbox" attribute="social-media" value="social-media">
+        <label for="social-media">Social Media</label><br>
+        <input id="other-methods" name="other-mediums" type="text" attribute="other-mediums" value="other-mediums">
+        <label for="other-methods">Other mediums: </label><br>
+    </fieldset>
+    </div>
+    <div>   
+    <fieldset>
+    <legend>Tell me what you know about the F.I.R.E movement?</legend>
+    <label for="bio">
+        <textarea id="bio" name="bio" rows="2" cols="65" placeholder="in a sentence or two ... "></textarea>
       </label>
-      <input type="submit" value="Submit" />
-    </form>
-  </body>
+    </fieldset>
+    </div>    
+    <div>
+    <fieldset>
+        <legend>Check which F.I.R.E. type you prefer</legend>
+        <input type="checkbox" name="lean-fire" id="lean-fire" attribute="lean-fire" value="lean-fire">
+        <label> Lean F.I.R.E.</label><br>
+        <input type="checkbox" name="fat-fire" id="fat-fire" attribute="fat-fire" value="fat-fire">
+        <label> Fat F.I.R.E.</label><br>
+        <input type="checkbox" name="barista-fire" id="barista-fire" attribute="barista-fire" value="barista-fire">
+        <label> Barista F.I.R.E.</label><br>
+        <input type="checkbox" name="coast-fire" id="coast-fire" attribute="coast-fire" value="coast-fire">
+        <label> Coast F.I.R.E.</label><br>
+        <input type="checkbox" name="slow-fire" id="slow-fire" attribute="slow-fire" value="slow-fire">
+        <label> Slow F.I.R.E.</label><br>
+        <input type="checkbox" name="chill-fire" id="chill-fire" attribute="chill-fire" value="chill-fire">
+        <label> Chill F.I.R.E.</label><br>
+        <input type="checkbox" name="other-fire" id="other-fire" attribute="other-fire" value="other-fire">
+        <label> Other F.I.R.E.</label><br>
+        <input type="checkbox" name="no-fire" id="no-fire" attribute="no-fire" value="no-fire">
+        <label> None</label><br>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset>
+        <legend>Want a personalize portfolio recommendation? Create an Account.</legend>
+        <label for="email" id="email-label">Email<input id="email" name="email" type="email" pattern="[a-zA-Z0-9,.!@#$%^&*()-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="enter your email" required></label>
+        <label for="password">Password<input id="password" name="password" type="password" pattern="[A-Za-z\d@$!%*?&]{12,}" placeholder="enter your password" required></label>
+    </fieldset>
+    </div>
+    <div>
+    <fieldset>   
+    <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" name="value" attribute="terms-and-conditions" value="terms-and-conditions"required name="terms-and-conditions"> I accept the <a href="www.nmap.org">terms and conditions</a>.
+      </label>
+    </fieldset> 
+    </div>
+    <div>
+      <input id="submit" name="submit" type="submit" attribute="submit" value="Submit" />
+    </fieldset> 
+    </div>
+</form>
 </html>
