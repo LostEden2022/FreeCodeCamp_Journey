@@ -13,18 +13,16 @@
     <div>
     <fieldset>
         <legend>General Information</legend>
-        <label for="name" id="name-label">Name
-            <input id="name" name="name" type="text" placeholder="enter your name" required></label>
-        </label>
+        <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="enter your name" required></label>
         <label for="age" id="number-label">Age<input id="number" name="number" type="number" min="18" max="110" placeholder="enter your age"></label>
-        <label for="occupation">Occupation (Optional)<input id="occupation" name="occupation" type="text" placeholder="enter your current occupation"></label>
+        <label for="occupation" id="occupation-label">Occupation (Optional)<input id="occupation" name="occupation" type="text" placeholder="enter your current occupation"></label>
     </fieldset>
     </div>
     <div>
     <fieldset>
         <legend>Financial Information</legend>
-        <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number"></label>
-        <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number" pattern="[0-9]"></label>
+        <label for="annual-income">Annual Income<input id="annual-income" name="annual-income" type="number" placeholder="enter your annual income"></label>
+        <label for="net-worth">Net Worth in USD<input id="net-worth" name="net-worth" type="number" pattern="[0-9]" placeholder="enter your net worth"></label>
         <label for="investment-experience">Investment Experience</label>
     </fieldset>
     <fieldset>
@@ -80,6 +78,7 @@
         </select>
     </fieldset>
     </div>
+    <div>
     <fieldset>
         <legend>What is your investment goal?</legend>
         <select id="dropdown" name="investment-goal">
@@ -96,26 +95,39 @@
     <div>
     <fieldset id="investment-check">
         <legend>How often do you check your investments?</legend>
-            <label for="daily">Daily<input id="daily" name="investment-check-frequency" type="radio" value="daily"></label>
-            <label for="weekly">Weekly<input id="weekly" name="investment-check-frequency" type="radio" value="weekly"></label>
-            <label for="monthly">Monthly<input id="monthly" name="investment-check-frequency" type="radio" value="monthly"></label>
-            <label for="quarterly">Quarterly<input id="quarterly" name="investment-check-frequency" type="radio" value="quarterly"></label>
-            <label for="yearly">Yearly<input id="yearly" name="investment-check-frequency" type="radio" value="yearly"></label>
-            <label for="never">Never<input id="never" name="investment-check-frequency" type="radio" value="never"></label>
+            <input id="daily" name="investment-check-frequency" type="radio" attribute="daily" value="daily">
+            <label for="daily">Daily</label><br>
+            <input id="weekly" name="investment-check-frequency" type="radio" attribute="weekly" value="weekly">
+            <label for="weekly">Weekly</label><br>
+            <input id="monthly" name="investment-check-frequency" type="radio" attribute="monthly" value="monthly">
+            <label for="monthly">Monthly</label><br>
+            <input id="quarterly" name="investment-check-frequency" type="radio" attribute="quarterly" value="quarterly">
+            <label for="quarterly">Quarterly</label><br>
+            <input id="yearly" name="investment-check-frequency" type="radio" attribute="yearly" value="yearly">
+            <label for="yearly">Yearly</label><br>
+            <input id="never" name="investment-check-frequency" type="radio" attribute="never" value="never">
+            <label for="never">Never</label><br>
     </fieldset>
     </div>
     <div>
     <fieldset id="investment-info">
         <legend>How do you prefer to receive investment information?</legend>
-        <label for="email">E-mail<input id="via-email" name="via-email" type="checkbox"></label><br>
-        <label for="phone">Phone<input id="phone" name="phone" type="checkbox"></label><br>
-        <label for="text-message">Text Message<input id="text-message" name="text-message" type="checkbox"></label><br>
-        <label for="in-person">In Person<input id="in-person" name="in-person" type="checkbox"></label><br>
-        <label for="video-call">Video Call<input id="video-call" name="video-call" type="checkbox"></label><br>
-        <label for="webinar">Webinar<input id="webinar" name="webinar" type="checkbox"></label><br>
-        <label for="newsletter">Newsletter<input id="newsletter" name="newsletter" type="checkbox"></label><br>
-        <label for="social-media">Social Media<input id="social-media" name="social-media" type="checkbox"></label><br>
-        <label for="other-methods">Other mediums: <input id="other-methods" name="other-methods" type="text"></label><br>
+        <input id="via-email" name="via-email" type="checkbox" attribute="via-email" value="via-email">
+        <label for="email">E-mail</label><br>
+        <input id="phone" name="phone" type="checkbox" attribute="phone" value="phone">
+        <label for="phone">Phone</label><br>
+        <input id="text-message" name="text-message" type="checkbox" attribute="text-message" value="text-message">
+        <label for="text-message">Text Message</label><br>
+        <input id="in-person" name="in-person" type="checkbox" attribute="in-person" value="in-person">
+        <label for="in-person">In Person</label><br>
+        <input id="video-call" name="video-call" type="checkbox" attribute="video-call" value="video-call">
+        <label for="video-call">Video Call</label><br>
+        <input id="webinar" name="webinar" type="checkbox"attribute="webinar" value="webinar">
+        <label for="webinar">Webinar</label><br>
+        <input id="newsletter" name="newsletter" type="checkbox" attribute="newsletter" value="newsletter">
+        <label for="newsletter">Newsletter</label><br>
+        <input id="social-media" name="social-media" type="checkbox" attribute="social-media" value="social-media">
+        <label for="social-media">Social Media</label><br>
     </fieldset>
     </div>
     <div>   
@@ -129,21 +141,21 @@
     <div>
     <fieldset>
         <legend>Check which F.I.R.E. type you prefer</legend>
-        <input type="checkbox" name="value" attribute="value1" id="value1" value="lean-fire">
+        <input id="lean-fire" name="lean-fire" type="checkbox" attribute="lean-fire" value="lean-fire">
         <label> Lean F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value2"id="value2" value="fat-fire">
+        <input id="fat-fire" name="fat-fire" type="checkbox" attribute="fat-fire" value="fat-fire">
         <label> Fat F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value3"id="value3" value="barista-fire">
+        <input id="barista-fire" name="barista-fire" type="checkbox" attribute="barista-fire" value="barista-fire">
         <label> Barista F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value4"id="value4" value="coast-fire">
+        <input id="coast-fire" name="coast-fire" type="checkbox" attribute="coast-fire" value="coast-fire">
         <label> Coast F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value5"id="value5" value="slow-fire">
+        <input id="slow-fire" name="slow-fire" type="checkbox" attribute="slow-fire" value="slow-fire">
         <label> Slow F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value6"id="value6" value="chill-fire">
+        <input id="chill-fire" name="chill-fire" type="checkbox" attribute="chill-fire" value="chill-fire">
         <label> Chill F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value7"id="value7" value="other-fire">
+        <input id="other-fire" name="other-fire" type="checkbox" attribute="other-fire" value="other-fire">
         <label> Other F.I.R.E.</label><br>
-        <input type="checkbox" name="value" attribute="value8" id="value8" value="none">
+        <input id="no-fire" name="no-fire" type="checkbox" attribute="no-fire" value="no-fire">
         <label> None</label><br>
     </fieldset>
     </div>
@@ -155,14 +167,13 @@
     </fieldset>
     </div>
     <div>
-    <fieldset>   
-    <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" name="value" attribute="value9" id="value9" value="terms-and-conditions"required name="terms-and-conditions"> I accept the <a href="www.nmap.org">terms and conditions</a>.
-      </label>
+    <fieldset>  
+    <input id ="terms-and-conditions" name="terms-and-conditions" type="checkbox" attribute="terms-and-conditions" value="terms-and-conditions" required> I accept the <a href="www">terms and conditions</a>.     
+    <label for="terms-and-conditions"></label>
     </fieldset> 
     </div>
     <div>
-      <input id="submit" type="submit" value="Submit" />
+      <input id="submit" name="submit" type="submit" attribute="submit" value="Submit" />
     </fieldset> 
     </div>
 </form>
