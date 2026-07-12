@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width initial-scale=1.0"
+  />
+  <title>Accessible Audio Controller</title>
+</head>
+<body>
+  <main>
+    <h1>Audio Controls</h1>
+  <section>
+    <button type="button">Play</button>
+  </section>
+  <section>
+    <span id="volume-label">Volume</span>
+    <br>
+    <span id="volume-description">Adjust the level of volume</span>
+    <input
+     type="range"
+     min="0"
+     max="100"
+     value="50"
+     aria-labelledby="volume-label volume-description"
+    />
+
+  </section>
+  <section>
+    <button type="button">Mute</button>
+  </section>
+  </main>
+</body>
+</html>
