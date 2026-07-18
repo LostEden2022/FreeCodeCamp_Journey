@@ -33,3 +33,6 @@ a {
     font-size: 12px;
     text-decoration: none;
 }
+a:hover, a:active {
+    text-decoration: firebrick;
+}
