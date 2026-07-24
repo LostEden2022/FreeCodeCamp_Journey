@@ -1,0 +1,30 @@
+body {
+    background: #333;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    color: whitesmoke;
+}
+
+a:link  {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active,
+a:focus     {
+    color: yellow;
+    outline-color: yellow;
+}
+
+a:visited {
+    color: greenyellow;
+}
+
+a {
+    text-decoration: none;
+}
