@@ -17,8 +17,9 @@ a:hover {
 
 a:active,
 a:focus     {
-    color: yellow;
+    color: purple;
     outline-color: yellow;
+    outline: darkred ;
 }
 
 a:visited {
