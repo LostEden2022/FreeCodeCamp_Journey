@@ -1,6 +1,7 @@
 body {
     background: #333;
     font-family: Arial, sans-serif;
+    font-size: 20px;
 }
 
 label {
@@ -18,7 +19,6 @@ a:hover {
 a:active,
 a:focus     {
     color: purple;
-    outline-color: yellow;
     outline: darkred ;
 }
 
