@@ -9,21 +9,23 @@ label {
 }
 
 a:link  {
-    color: whitesmoke;
-}
-
-a:hover {
     color: red;
 }
 
-a:active,
-a:focus     {
-    color: purple;
-    outline: darkred ;
+a:active {
+    color: yellow;
+}
+a:hover {
+    color: green;
 }
 
 a:visited {
     color: greenyellow;
+}
+
+a:focus     {
+    color: purple;
+    outline: darkviolet ;
 }
 
 a {
