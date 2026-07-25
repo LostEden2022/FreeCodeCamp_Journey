@@ -1,7 +1,26 @@
 body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1f1f1f;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+div {
     background: #333;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+    width: 500px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 }
 
 label {
@@ -30,4 +49,30 @@ a:focus     {
 
 a {
     text-decoration: none;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list li {
+    display: flex;
+    flex-direction: column;
+    background: #222;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform .2s, background .2s;
+}
+
+.sub-item {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
 }
