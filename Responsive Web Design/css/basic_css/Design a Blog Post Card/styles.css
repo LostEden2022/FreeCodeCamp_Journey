@@ -7,15 +7,17 @@ body {
     border-radius: 20px;
     width: 300px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+
     font-size: 16px;
 }
 
 .post-img {
     width: 300px;
-    border-bottom: thick solid black;
+    border-bottom: thick solid darkslategrey;
     max-width: 100%;
 }
 
