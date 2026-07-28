@@ -4,16 +4,41 @@ body {
 
 .blog-post-card {
     background: white;
-    border-radius: 5px;
-    width: 20px;
+    border-radius: 20px;
+    width: 300px;
     text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
 }
 
 .post-img {
-    width: auto;
-    border-bottom: black 2px;
+    width: 300px;
+    border-bottom: thick solid black;
+    max-width: 100%;
 }
 
 .post-content {
-    padding: 5px;
+    padding: 10px;
+}
+
+.post-title,
+.post-excerpt {
+    color: darkslategray;
+    margin: 20px;
+}
+
+.read-more {
+    color: darkolivegreen;
+    background-color: lightgray;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.read-more:hover {
+    color: ghostwhite;
+    background-color: darkred;
 }
