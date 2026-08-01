@@ -5,7 +5,9 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     text-align: center;
+
 }
+
 hr, section {
     width: 100%;
     color: whitesmoke;
