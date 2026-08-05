@@ -5,13 +5,26 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     text-align: center;
+    width: 30vw;
 }
 
+h1, h2, p {
+    font-family: Arial, sans-serif;
+    color: lightgray;
+}
 hr, section {
     width: 100%;
     color: whitesmoke;
 }
 
-body {
-    background: 2px solid red url("example-url-goes-here");
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
 }
