@@ -5,10 +5,13 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     text-align: center;
-
 }
 
 hr, section {
     width: 100%;
     color: whitesmoke;
+}
+
+body {
+    background: 2px solid red url("example-url-goes-here");
 }
