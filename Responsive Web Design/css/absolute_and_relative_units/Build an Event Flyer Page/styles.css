@@ -28,8 +28,8 @@ hr, section {
     font-size: 18px;
 }
 
-.details{
-    width: 75%;
+.key-event{
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -38,4 +38,5 @@ hr, section {
     font-weight: bold;
     font-size: 12px;
     border-radius: 8px;
+    border: darkolivegreen;
 }
