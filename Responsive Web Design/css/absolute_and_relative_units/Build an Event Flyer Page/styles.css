@@ -35,7 +35,7 @@ hr, section {
 ul, li {
     display: flex;
     width: 33%;
-    justify-content: center;
+    justify-content: left;
     font-size: 75%;
     border-radius: 8px;
 }
