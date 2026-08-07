@@ -5,16 +5,17 @@ body {
     margin: 0 auto;
     text-align: center;
     width: 25vw;
-    height: auto;
+    min-height: calc(100vh - 100px);
 }
 
 .sherpa_img {
     max-width: 25vw;
+    transform: translateY(-5%);
 }
 
 h1, h2, p {
     font-family: Arial, sans-serif;
-    font-size: 100%;
+    font-size: 1em;
     color:ghostwhite;
 }
 
