@@ -3,40 +3,30 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
-    min-height: 100vh;
     text-align: center;
-    width: 30vw;
+    width: 25vw;
+    height: auto;
+}
+
+.sherpa_img {
+    max-width: 25vw;
 }
 
 h1, h2, p {
     font-family: Arial, sans-serif;
-    color: lightgray;
-}
-hr, section {
-    width: 100%;
-    color: whitesmoke;
+    font-size: 100%;
+    color:ghostwhite;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+hr, section {
+    width: 100%;
 }
 
 .key-event{
-    width: auto;
-    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 75%;
     border-radius: 8px;
     border: darkolivegreen;
 }
