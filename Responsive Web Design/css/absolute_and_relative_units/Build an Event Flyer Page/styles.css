@@ -1,33 +1,41 @@
 body {
     background-color: #333333;
+    color: ghostwhite;
+    font-family: Arial, sans-serif;
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
     text-align: center;
-    width: 25vw;
+    width: 50vw;
     min-height: calc(100vh - 100px);
 }
 
 .sherpa_img {
-    max-width: 25vw;
+    max-width: 50vw;
     transform: translateY(-5%);
 }
 
-h1, h2, p {
-    font-family: Arial, sans-serif;
+h1, h2, h3 {
     font-size: 1em;
-    color:ghostwhite;
 }
 
 hr, section {
     width: 100%;
 }
 
-.key-event{
+.key-event, p  {
     display: flex;
+    width: 33%;
     justify-content: center;
-    font-weight: bold;
     font-size: 75%;
     border-radius: 8px;
     border: darkolivegreen;
+}
+
+ul, li {
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    font-size: 75%;
+    border-radius: 8px;
 }
