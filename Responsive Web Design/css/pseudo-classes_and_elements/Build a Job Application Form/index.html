@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1.0">
   <title>Application Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Job Application Form</h1>
 <form>
   <fieldset>
     <label for="full-name">Full Name:</label>
-    <input type="text" id="full-name" name= "name" placeholder="Enter Your Name" minlength="40" required/>
+    <input type="text" id="full-name" name= "name" placeholder="Enter Your Name" minlength="10" required/>
     <br>
-    <label for="e-mail">E-mail:</label>
-    <input type="email" id="e-mail" name= "e-mail" placeholder="example@email.com" minlength="40" required/>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name= "email" placeholder="example@email.com" minlength="20"/>
     <br>
     <label for="dropdown">Desired Position:</label>
     <select id="dropdown" name="position">
@@ -26,11 +27,11 @@
   </fieldset>
   <fieldset>
     <legend>Availability</legend>
-    <input type="radio" id="full-time" name="availability" required/>
+    <input class="checkbox" type="checkbox" id="full-time" name="availability"/>
     <label for="full-time">Full-Time</label>
-    <input type="radio" id="part-time" name="availability" required/>
+    <input class="radio-button" type="radio" id="part-time" name="availability"/>
     <label for="part-time">Part-Time</label>
-    <input type="radio" id="intern" name="availability" required/>
+    <input class="radio-button" type="radio" id="intern" name="availability"/>
     <label for="intern">Intern</label>
   </fieldset>
   <label for="why">Why do you want this job?</label>
@@ -38,7 +39,7 @@
   <textarea id="why" name="why" placeholder="I am here to pursue my passion..." rows="10" cols="50">
       </textarea>
   <br>
-  <button type="submit">Submit Application</button>
+  <button type="submit"><a href="#" target="_blank">Submit Application</a></button>
 </form>
 </body>
 </html>
