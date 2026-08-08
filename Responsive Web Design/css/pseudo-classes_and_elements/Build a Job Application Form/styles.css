@@ -1,7 +1,49 @@
 body {
     background-color: #333333;
+    color: ghostwhite;
+}
+input:required {
+    border: 2px solid orange;
 }
 
-submit:hover {
+input:valid {
+    border-color: green;
+}
+a:hover {
     color: red;
 }
+a:active {
+    color: yellow;
+}
+a:link {
+    color: green;
+}
+button:focus {
+    color: blue;
+}
+
+button:visited {
+    color: violet;
+}
+
+a {
+    text-decoration: none;
+}
+ input:focus, textarea:focus {
+     outline: 1px solid darkgreen;
+     background-color: greenyellow;
+     border-radius: 4px;
+ }
+
+ .checkbox {
+     appearance: none;
+     width: 18px;
+     height: 18px;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     display: inline-block;
+     position: relative;
+     cursor: pointer;
+     transition: all 0.25s ease;
+     vertical-align: middle;
+ }
