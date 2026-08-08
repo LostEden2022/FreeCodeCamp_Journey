@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FreeCodeCamp_Journey.iml" filepath="$PROJECT_DIR$/.idea/FreeCodeCamp_Journey.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
     </modules>
   </component>
 </project>
