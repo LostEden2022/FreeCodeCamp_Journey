@@ -1,3 +1,7 @@
 body {
     background-color: #333333;
 }
+
+submit:hover {
+    color: red;
+}
