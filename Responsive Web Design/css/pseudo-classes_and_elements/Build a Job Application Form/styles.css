@@ -1,13 +1,6 @@
+
+
 body {
-    background-color: whitesmoke;
-    color: ghostwhite;
-    font-size: 20px;
+    background-color: midnightblue;
+    color: whitesmoke;
 }
-
-input:focus, textarea:focus {
-    outline: 1px solid darkgreen;
-    background-color: greenyellow;
-    border-radius: 4px;
-}
-
-
