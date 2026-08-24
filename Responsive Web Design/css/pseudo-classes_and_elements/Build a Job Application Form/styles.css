@@ -16,11 +16,16 @@ body {
 }
 
 input:focus, textarea:focus {
-    border-color: green;
+    border-color: yellow;
     outline: none;
 }
 
 input:invalid, textarea:invalid, select:invalid {
-    border-color: red;
+    border-color:firebrick;
+    outline: none;
+}
+
+input:valid, textarea:valid, select:valid {
+    border-color: greenyellow;
     outline: none;
 }
