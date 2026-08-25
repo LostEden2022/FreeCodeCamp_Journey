@@ -8,7 +8,6 @@ body {
 .container {
     background-color: #2f4f4f1a;
     width: 80%;
-    max-width: 600px;
     border-radius: 10px;
     margin: 20px auto;
     padding: 10px 20px;
@@ -41,10 +40,12 @@ button:hover {
     box-shadow: 0 0 0 1px greenyellow;
 }
 
-label:checked {
-    color: #333333;
+input[type="radio"]:checked + label {
+    color: #2563eb;
+    font-weight: bold;
 }
 
 input:first-of-type {
     border-radius: 8px;
 }
+
