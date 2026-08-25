@@ -52,7 +52,7 @@ input:valid, textarea:valid, select:valid {
     color: ghostwhite;
 }
 
-.contact-method-radio-btn::before {
+.radio-group::before {
     display: block;
     content: " ";
     width: 10px;
@@ -63,7 +63,7 @@ input:valid, textarea:valid, select:valid {
     background-color: lightgreen;
 }
 
-.contact-method-radio-btn:checked::before {
+.radio-group:checked::before {
     background-color: lightgreen;
     transform: translate(3px, 3px) scale(1);
 }
