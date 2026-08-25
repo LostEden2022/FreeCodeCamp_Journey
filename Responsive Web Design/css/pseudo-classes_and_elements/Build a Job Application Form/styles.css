@@ -20,13 +20,13 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-input:invalid, textarea:invalid, select:invalid {
-    border-color:firebrick;
+input:invalid, select:invalid, textarea:invalid {
+    border-color:red;
     outline: none;
 }
 
-input:valid, textarea:valid, select:valid {
-    border-color: greenyellow;
+input:invalid, select:invalid, textarea:invalid {
+    border-color: green;
     outline: none;
 }
 
@@ -52,7 +52,7 @@ input:valid, textarea:valid, select:valid {
     color: ghostwhite;
 }
 
-.radio-group::before {
+.radio-group input[type="radio"]::before {
     display: block;
     content: " ";
     width: 10px;
@@ -61,9 +61,11 @@ input:valid, textarea:valid, select:valid {
     transform: translate(3px, 3px) scale(0);
     transition: all 0.3s ease-in;
     background-color: lightgreen;
+
 }
 
-.radio-group:checked::before {
+.radio-group input[type="radio"]:checked::before {
     background-color: lightgreen;
     transform: translate(3px, 3px) scale(1);
+
 }
