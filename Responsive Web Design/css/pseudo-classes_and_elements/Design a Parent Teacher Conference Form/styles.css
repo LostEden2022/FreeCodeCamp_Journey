@@ -65,14 +65,6 @@ input, input::placeholder, textarea {
 
 .contact-method-radio-btn::before {
     display: block;
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-.contact-method-radio-btn::before {
-    display: block;
     content: " ";
     width: 10px;
     height: 10px;

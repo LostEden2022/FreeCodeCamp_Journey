@@ -12,13 +12,13 @@
 <form>
   <fieldset>
     <label for="name">Full Name:</label>
-    <input type="text" id="name" name= "name" placeholder="e.g. John Doe" required/>
+    <input type="text" id="name" name= "name" placeholder="Enter Full Name" required/>
     <br>
     <label for="email">E-mail:</label>
-    <input type="email" id="email" name= "email" placeholder="e.g. example@email.com" minlength="20" required/>
+    <input type="email" id="email" name= "email" placeholder="Enter E-mail" minlength="20" required/>
     <br>
     <label for="position">Desired Position:</label>
-    <select id="position" name="position">
+    <select id="position" name="position" required>
       <option value="">Select One</option>
       <option value="1">User Design</option>
       <option value="2">Platform Engineer</option>
@@ -37,9 +37,7 @@
   </fieldset>
   <fieldset>
   <label for="message">Why do you want this job?</label>
-  <br>
-  <textarea id="message" name="why" placeholder="I am here to pursue my passion..." rows="10" cols="65" required>
-  </textarea>
+  <textarea id="message" name="why" placeholder="I am here to pursue my passion..." rows="10" cols="65" required></textarea>
   </fieldset>
   <br>
   <button class="submit-btn" type="submit"><a href="#" target="_blank">Submit Application</a></button>
