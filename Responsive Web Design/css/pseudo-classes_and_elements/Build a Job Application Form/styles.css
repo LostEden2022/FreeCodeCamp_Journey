@@ -64,3 +64,33 @@ input:first-of-type {
     border-radius: 2px;
 }
 
+/*Submit Button*/
+.submit-btn {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: darkslategray;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+a:hover {
+    background-color: whitesmoke;
+    color: green;
+}
+
+a:link {
+    background-color: whitesmoke;
+    color: darkslategray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+}
+
