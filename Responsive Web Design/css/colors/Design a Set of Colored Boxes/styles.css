@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.color-grid {
+    background-color: rgb(255 255 255 / 0.44);
+    width: auto;
+    max-width: 100%;
+    height: 160px;
+    max-height: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    display: inline-block;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.color1 {
+    background-color:#2F4F4FFF;
+}
+
+.color2 {
+    background-color: rgb(20 197 197);
+}
+
+.color3 {
+    background-color: lightslategrey;
+}
+
+.color4 {
+    background-color: hsl(96 51% 56%);
+}
+
+.color5 {
+    background: linear-gradient(90deg,red 0%, white 50%, blue 100%);
+}
