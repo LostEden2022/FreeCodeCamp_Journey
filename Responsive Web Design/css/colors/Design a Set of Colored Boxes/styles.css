@@ -11,7 +11,7 @@ body {
     max-height: 100%;
     margin: 20px;
     padding: 20px;
-    border: 5px solid black;
+    border: 5px solid lightslategrey;
     display: inline-block;
 }
 
@@ -40,5 +40,5 @@ body {
 }
 
 .color5 {
-    background: linear-gradient(90deg,red 0%, white 50%, blue 100%);
+    background: radial-gradient(red 0%, white 50%, blue 100%);
 }
