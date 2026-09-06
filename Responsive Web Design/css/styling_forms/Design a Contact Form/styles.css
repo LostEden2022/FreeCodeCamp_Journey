@@ -1,15 +1,33 @@
 body {
-    width: 100%;
+    width: 40%;
     height: 100vh;
-    margin: 0;
+    margin: auto;
     background-color: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma, sans-serif;
     font-size: 16px;
+    border: 1px solid ghostwhite;
 }
 
 h1,
 p {
     margin: 1em auto;
     text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #7f7f83;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
 }
