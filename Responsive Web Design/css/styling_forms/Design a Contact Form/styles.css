@@ -1,8 +1,15 @@
+body {
+    background-color: lightslategrey;
+}
 .form-container{
     width: 40%;
-    height: 75vh;
-    margin: auto;
+    height: 65vh;
+    max-width: 500px;
+    min-width: 100px;
+    margin: 0 auto;
     border: 1px solid ghostwhite;
+    border-radius: 20px;
+    padding: 2px;
     background-color: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma, sans-serif;
@@ -10,25 +17,48 @@
 }
 
 h1,
-h2,
-p {
+h2 {
     margin: 1em auto;
     text-align: center;
 }
 
-form {
-    margin: 0 auto;
-    max-width: 300px;
-    min-width: 100px;
-    width: 60vw;
-}
 
 fieldset {
     border: none;
     padding: 2rem 0;
-    border-bottom: 3px solid #7f7f83;
+    border-bottom: 2px dashed #7f7f83;
 }
 
 fieldset:last-of-type {
     border-bottom: none;
+}
+
+label {
+    margin: auto;
+    color: antiquewhite;
+    display: block;
+}
+
+input,
+textarea {
+    width: auto;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    font-size: 1.1rem;
+    border-color: white;
+
+}
+
+a:link {
+    color:#dfdfe2;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
 }
