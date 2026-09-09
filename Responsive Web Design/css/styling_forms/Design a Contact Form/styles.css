@@ -2,14 +2,14 @@ body {
     background-color: lightslategrey;
 }
 .form-container{
-    width: 40%;
-    height: 65vh;
+    width: 100%;
+    height: auto;
     max-width: 500px;
     min-width: 100px;
     margin: 0 auto;
     border: 1px solid ghostwhite;
     border-radius: 20px;
-    padding: 2px;
+    padding: 10px;
     background-color: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma, sans-serif;
@@ -42,17 +42,20 @@ label {
 input,
 textarea {
     width: auto;
-    padding: 2px;
+    padding: 5px;
     margin-bottom: 5px;
+    vertical-align: middle;
 }
 
-button[type="submit"] {
+button {
     display: block;
     margin: auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-color: white;
     background-color: whitesmoke;
-
 }
 
-
+button:hover {
+    background-color: black;
+    color: white;
+}
