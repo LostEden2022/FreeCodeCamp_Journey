@@ -1,0 +1,37 @@
+body {
+    background-color: #696969FF;
+    color: #f4f4f4;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+.feature-card-container {
+    text-align: center;
+    display: inline-block;
+    background-color: #7f7f83;
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: 2px transparent;
+    border-radius: 20px;
+
+}
+
+.feature-card {
+    display: inline-flex;
+    background-color: #333333;
+    width: 40%;
+    height: 100px;
+    margin: 10px;
+    border: 2px transparent;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.feature-card[type="input"] {
+    text-align: right;
+    border: #71F53E;
+}
