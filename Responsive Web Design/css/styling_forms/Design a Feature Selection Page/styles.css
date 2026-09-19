@@ -4,7 +4,7 @@ body {
     text-align: center;
     font-family: Tahoma, sans-serif;
     font-size: 14px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .feature-card-container {
@@ -31,7 +31,40 @@ body {
     text-align: center;
 }
 
-.feature-card[type="input"] {
+.feature-tile{
+    display: block;
+    font-weight: bold;
+}
+
+.feature-description {
+    display: block;
+    color: red;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #f1be32;
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.3s;
+    vertical-align: middle;
+    margin: 15px;
+    align-content: flex-end;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #f1be32;
+    border-color: #e2a60d;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    display: block;
     text-align: right;
-    border: #71F53E;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
 }
