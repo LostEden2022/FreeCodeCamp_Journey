@@ -99,43 +99,4 @@ h1 {
     line-height: 1.5;
     flex-grow: 1;
 }
-
-.feature-checkbox[type="checkbox"] {
-    appearance: none;
-    width: 1.25rem;
-    height: 1.25rem;
-    border: 2px solid var(--border-color);
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    display: grid;
-    place-content: center;
-    transition: background-color var(--transition-speed), border-color var(--transition-speed);
-    background-color: white;
-    margin-top: 0.1rem;
-}
-
-.feature-checkbox[type="checkbox"]:before {
-    content: "";
-    width: 0.65rem;
-    height: 0.35rem;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: rotate(-45deg) scale(0);
-    transition: transform var(--transition-speed) ease-in-out;
-    margin-bottom: 2px;
-}
-
-.feature-checkbox[type="checkbox"]:checked {
-    background-color: var(--primary);
-    border-color: var(--primary);
-}
-
-.feature-checkbox[type="checkbox"]:checked::before {
-    transform: rotate(-45deg) scale(1);
-}
-
-.feature-card:focus-within {
-    outline: 2px solid var(--primary);
-    outline-offset: 2px;
 }
