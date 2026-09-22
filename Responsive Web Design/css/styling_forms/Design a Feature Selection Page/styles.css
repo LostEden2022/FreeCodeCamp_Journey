@@ -8,7 +8,6 @@ body {
 }
 
 .feature-card-container {
-    text-align: center;
     display: inline-block;
     background-color: #7f7f83;
     width: 500px;
@@ -18,35 +17,28 @@ body {
     border: 2px transparent;
     border-radius: 20px;
 
+
 }
 
 .feature-card {
     display: inline-flex;
     background-color: #333333;
+    font-size: .5rem;
     width: 40%;
     height: 100px;
     margin: 10px;
     border: 2px transparent;
     border-radius: 20px;
-    text-align: center;
+    justify-content: center;
 }
 
-.feature-tile{
-    display: block;
-    font-weight: bold;
-}
-
-.feature-description {
-    display: block;
-    color: red;
-}
 
 input[type="checkbox"] {
     width: 15px;
     height: 15px;
     cursor: pointer;
     appearance: none;
-    border: 2px solid #f1be32;
+    border: 2px solid greenyellow;
     border-radius: 4px;
     background-color: white;
     transition: all 0.3s;

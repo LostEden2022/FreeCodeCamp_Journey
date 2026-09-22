@@ -2,24 +2,225 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design a Feature Selection Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-light: #eef2ff;
+            --border-color: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --transition-speed: 0.2s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .feature-card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+            transition: all var(--transition-speed) ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* Pure CSS active state selection using :has() */
+        .feature-card:has(.feature-checkbox:checked) {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.12);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .feature-description {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .feature-checkbox {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            display: grid;
+            place-content: center;
+            transition: background-color var(--transition-speed), border-color var(--transition-speed);
+            background-color: white;
+            margin-top: 0.1rem;
+        }
+
+        .feature-checkbox::before {
+            content: "";
+            width: 0.65rem;
+            height: 0.35rem;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+            transform: rotate(-45deg) scale(0);
+            transition: transform var(--transition-speed) ease-in-out;
+            margin-bottom: 2px;
+        }
+
+        .feature-checkbox:checked {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .feature-checkbox:checked::before {
+            transform: rotate(-45deg) scale(1);
+        }
+
+        .feature-card:focus-within {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Feature Selection</h1>
+<div class="container">
+    <h1>Feature Selection</h1>
+    <p class="subtitle">Choose the desired modules to configure your environment.</p>
+
     <div class="feature-card-container">
-        <label class="feature-card">
-            <span class="feautre-title">Networking</span>
-            <input type="checkbox" class="feature-checkboex" name="feature" value="networking"/>
-            <span class="feature-description">Switches, Routers, and Servers...</span>
+        <!-- Networking -->
+        <label class="feature-card" for="networking">
+            <div>
+                <div class="card-header">
+                    <h2 class="feature-title">Networking</h2>
+                    <input type="checkbox" class="feature-checkbox" id="networking" name="feature" value="networking"/>
+                </div>
+                <p class="feature-description">Switches, Routers, and structural server configurations.</p>
+            </div>
         </label>
-        <label class="feature-card"><input type="checkbox"/>Cybersecurity</label>
-        <p>Penetration Testing, Vulnerability Testing, Malware Creation...</p>
-        <label class="feature-card"><input type="checkbox"/>Artificial Intelligence</label>
-        <label class="feature-card"><input type="checkbox"/>Software Defined Radio</label>
-        <label class="feature-card"><input type="checkbox"/>Survival Skills</label>
-        <label class="feature-card"><input type="checkbox"/>Expressive Skills</label>
+
+        <!-- Cybersecurity -->
+        <label class="feature-card" for="cybersecurity">
+            <div>
+                <div class="card-header">
+                    <h2 class="feature-title">Cybersecurity</h2>
+                    <input type="checkbox" class="feature-checkbox" id="cybersecurity" name="feature" value="cybersecurity"/>
+                </div>
+                <p class="feature-description">Penetration Testing, Vulnerability Testing, and defensive controls.</p>
+            </div>
+        </label>
+
+        <!-- Artificial Intelligence -->
+        <label class="feature-card" for="ai">
+            <div>
+                <div class="card-header">
+                    <h2 class="feature-title">Artificial Intelligence</h2>
+                    <input type="checkbox" class="feature-checkbox" id="ai" name="feature" value="ai"/>
+                </div>
+                <p class="feature-description">Machine learning workflows, LLM orchestration, and smart automation.</p>
+            </div>
+        </label>
+
+        <!-- Software Defined Radio -->
+        <label class="feature-card" for="sdr">
+            <div>
+                <div class="card-header">
+                    <h2 class="feature-title">Software Defined Radio</h2>
+                    <input type="checkbox" class="feature-checkbox" id="sdr" name="feature" value="sdr"/>
+                </div>
+                <p class="feature-description">Signal analysis, wireless protocols, and radio frequency interception.</p>
+            </div>
+        </label>
+
+        <!-- Survival Skills -->
+        <label class="feature-card" for="survival">
+            <div>
+                <div class="card-header">
+                    <h2 class="feature-title">Survival Skills</h2>
+                    <input type="checkbox" class="feature-checkbox" id="survival" name="feature" value="survival"/>
+                </div>
+                <p class="feature-description">Wilderness readiness, navigation systems, and emergency preparedness.</p>
+            </div>
+        </label>
+
+        <!-- Expressive Skills -->
+        <label class="feature-card" for="expressive">
+            <div>
+                <div class="card-header">
+                    <h2 class="feature-title">Expressive Skills</h2>
+                    <input type="checkbox" class="feature-checkbox" id="expressive" name="feature" value="expressive"/>
+                </div>
+                <p class="feature-description">Public speaking, creative writing, and concise interpersonal delivery.</p>
+            </div>
+        </label>
     </div>
+</div>
 </body>
 </html>
