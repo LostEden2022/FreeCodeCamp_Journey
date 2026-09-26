@@ -99,4 +99,29 @@ h1 {
     line-height: 1.5;
     flex-grow: 1;
 }
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #64748b;
+    border-radius: 4px;
+    background-color: white;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+input[type="checkbox"]:checked {
+    border: 4px solid forestgreen;
+    border-color: #71F53E;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: ghostwhite;
+    background-color: black;
 }
