@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sanitize" level="application" />
+    <orderEntry type="library" name="sanitize.css" level="application" />
   </component>
 </module>
