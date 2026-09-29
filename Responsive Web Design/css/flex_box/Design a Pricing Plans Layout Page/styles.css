@@ -1,23 +1,79 @@
+:root {
+    --primary: #4f46e5;
+    --primary-light: #eef2ff;
+    --border-color: #e2e8f0;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --transition-speed: 0.2s;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: Tahoma, sans-serif, "Times New Roman";
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--bg-color);
+    color: var( --text-main);
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+    width: 800px;
+}
+
+
+h2, p{
+    text-align: center;
+}
+
+p {
+    border-bottom: 2px solid black;
+}
+
+.features {
+
+}
+
+
 .pricing-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: var( --text-main);
+    max-width: 750px;
+    padding: 10px;
+    border: 2px solid var( --border-color);
+    margin: 0 auto;
+    gap: 20px;
 }
 
 .pricing-card {
    justify-content: space-between;
    flex: 0 0 200px;
+   background-color: var(--card-bg);
+   color: var( --text-main);
+   width: 100%;
+   max-width: 200px;
+   height: 350px;
    border: 2px solid black;
+   border-radius: 20px;
 }
 
 .basic-plan {
-    order: 1;
+    order: 0;
 }
 
 .pro-plan {
-    order: 2;
+    order: 1;
     flex-grow: 2;
 }
 
 .pro-plan {
-    order: 3;
+    order: 0;
 }
