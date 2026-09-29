@@ -19,7 +19,7 @@
 h1 {
     text-align: center;
     text-transform: uppercase;
-    background-color: var(--bg-color);
+    background-color: var( --bg-color);
     color: var( --text-main);
     border-bottom: 2px solid black;
     margin-bottom: 5px;
@@ -27,16 +27,19 @@ h1 {
 }
 
 
-h2, p{
+h2, p {
     text-align: center;
+    color: var( --text-main);
+    padding: 5px;
 }
 
-p {
+.price {
     border-bottom: 2px solid black;
 }
 
 .features {
-
+    font-size: 12px;
+    text-align: left;
 }
 
 
@@ -45,6 +48,7 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    background-color: var( --bg-color);
     color: var( --text-main);
     max-width: 750px;
     padding: 10px;
@@ -60,7 +64,7 @@ p {
    color: var( --text-main);
    width: 100%;
    max-width: 200px;
-   height: 350px;
+   height: auto;
    border: 2px solid black;
    border-radius: 20px;
 }
