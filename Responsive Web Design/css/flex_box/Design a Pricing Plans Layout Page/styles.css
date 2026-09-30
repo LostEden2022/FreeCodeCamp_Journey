@@ -17,10 +17,12 @@
 h1 {
     text-align: center;
     text-transform: uppercase;
+    background-color: var(--bg-color);
     color: var(--text-main);
-    border-bottom: 2px solid black;
+    padding: 5px;
+    border-bottom: 2px solid #1e293b;
     border-radius: 10px;
-    margin: auto;
+    margin: 25px auto;
     width: 400px;
 }
 
@@ -28,19 +30,21 @@ h1 {
 h2, p {
     text-align: center;
     color: var(--text-main);
-    padding: 5px;
+    padding: 2px 0;
+    margin-bottom: 2px;
 }
 
 .price {
-    border-bottom: 1px solid darkslategray;
-    margin: 5px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #3f3f3f;
+    margin: 2px auto;
 }
 
 .feature {
     font-size: 14px;
-    text-align: left;
+    color: var(--text-main);
     list-style: none;
-    justify-content: start;
+    margin-bottom: 2px;
 }
 
 .check {
@@ -61,13 +65,12 @@ h2, p {
 }
 
 a{
-
     text-decoration: none;
     font-weight: bolder;
-    color: black;
-    background-color: orange;
-    padding: 4px 8px;
-    border: 1px solid black;
+    color: var(--text-main);
+    background-color: #FFAE00;
+    padding: 4px 2px;
+    border: 1px solid #3f3f3f;
     border-radius: 10px;
 
 }
@@ -80,17 +83,19 @@ a{
     background-color: var(--bg-color);
     color: var(--text-main);
     max-width: 800px;
-    height: 300px;
+    height: auto;
     padding: 10px;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--primary-light);
     border-radius: 10px;
     margin: 0 auto;
     gap: 10px;
 }
 
 .pricing-card {
+   display: flex;
    align-items: center;
    justify-content: space-between;
+   flex-direction: column;
    flex: 0 0 200px;
    background-color: var(--card-bg);
    color: var(--text-main);
@@ -98,18 +103,18 @@ a{
    min-width: 250px;
    max-width: 300px;
    height: auto;
-   border: 2px solid black;
+   padding-bottom: 15px;
+   border: 2px solid #3f3f3f;
    border-radius: 20px;
 }
 
 .pricing-card:hover {
     transition: var(--transition-speed);
     flex-grow: 1;
-    background-color: #ADFF2F60;
+    background-color: #E6f4EA;
     font-weight: bold;
-    border: 2px solid greenyellow;
+    border: 2px solid #34A853;
 }
-
 
 .basic-plan {
     order: 0;
@@ -118,9 +123,9 @@ a{
 .pro-plan {
     order: 1;
     flex-grow: 2;
-    background-color: red;
+    background-color: #83EEFF;
 }
 
-.pro-plan {
-    order: 0;
+.premium-plan {
+    order: 2;
 }
