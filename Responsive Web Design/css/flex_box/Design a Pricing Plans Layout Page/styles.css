@@ -90,7 +90,7 @@ a{
 
 .pricing-card {
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-between;
    flex: 0 0 200px;
    background-color: var(--card-bg);
    color: var(--text-main);
@@ -118,7 +118,7 @@ a{
 .pro-plan {
     order: 1;
     flex-grow: 2;
-    background-color: lightblue;
+    background-color: red;
 }
 
 .pro-plan {
