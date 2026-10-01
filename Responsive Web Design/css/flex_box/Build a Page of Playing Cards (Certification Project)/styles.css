@@ -10,7 +10,7 @@ h1,p {
     margin: 5px auto;
 }
 
-.playing-cards {
+#playing-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,10 +25,13 @@ h1,p {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 90px;
     height: 180px;
     background-color: white;
+    font-weight: bold;
     padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
@@ -36,16 +39,23 @@ h1,p {
 }
 
 .left {
-    flex-direction:column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
 }
 
 .middle {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-grow: 1;
+    padding: 0 10px;
 }
 
 .right {
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-self: flex-end;
+    transform: rotate(180deg);
 }
