@@ -12,7 +12,7 @@ h1,p {
 
 #playing-cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
     width: 800px;
