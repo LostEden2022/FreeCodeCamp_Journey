@@ -36,7 +36,6 @@ h1,p {
     border: 2px solid black;
     border-radius: 10px;
     margin: 10px;
-    filter: sepia(100%);
 }
 
 .left {
@@ -59,4 +58,44 @@ h1,p {
     flex-direction: column;
     align-self: flex-end;
     transform: rotate(180deg);
+}
+
+
+/* Ten Card */
+.ten-card {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding: 1px 2px !important;
+}
+
+.ten-card .pip-column-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 0.8;
+}
+
+.ten-card .center-pips {
+    justify-content: space-around;
+}
+
+.ten-card .pip-column-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 0.8;
+    transform: rotate(180deg);
+}
+
+/* Ace Card */
+
+.ace-card {
+    font-size: 100px;
+}
+
+.heart {
+    color: red;
 }
