@@ -4,5 +4,11 @@ html {
 
 .newspaper {
     font-size: 16px;
-    font-family: Open Sans, Sans-Serif, serif;
+    font-family: 'Open Sans', 'Sans-Serif', serif;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+;
 }
