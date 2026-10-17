@@ -2,11 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Test your knowledge with our engaging online quiz. Challenge yourself, learn new facts, and share your score with friends today"/>
     <title>Build a Quiz Webpage</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
+  <header>
+    <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp"/>
+    <h1>HTML/CSS Quiz</h1>
+    <nav>
+      <ul>
+        <li><a href="#student-info">INFO</a></li>
+        <li><a href="#html-questions">HTML</a></li>
+        <li><a href="#css-questions">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <section role="region" aria-labelledby="student-info">
+        <h2 id="student-info">Student Information</h2>
+        <div class="info">
+          <label for="name">Student's Name: </label>
+          <input type="text" id="name" name="name"/>
+        </div>
+        <div class="info">
+          <label for="e-mail">E-mail Address: </label>
+          <input type="email" id="e-mail" name="e-mail"/>
+        </div>
+        <div class="info">
+          <label for="birthdate">Date of Birth: </label>
+          <input type="date" name="birthdate" id="birthdate"/>
+        </div>
+      </section>
+      <section role="region" aria-labelledby="html-questions">
+        <h2 id="html-questions">HTML Questions</h2>
+        <div class="question-block">
+          <h3><span class="sr-only">Question</span>1</h3>
+          <fieldset class="question" name="div-span">
+            <legend>The &lt;div&gt; element is a block-level element, whereas the &lt;span&gt; element is an inline element.</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="html-question1" value="true">
+                    True</label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="html-question1" value="false">
+                    False</label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
+        <div class="question-block">
+          <h3><span class="sr-only">Question</span>2</h3>
+          <fieldset class="question" name="head-script">
+            <legend>An external style sheet is linked inside the &lt;head&gt; section of an HTML document using the &lt;script&gt; tag.</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="html-question2" value="true">
+                    True</label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="html-question2" value="false">
+                    False</label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
+      </section>
+      <section role="region" aria-labelledby="css-questions">
+        <h2 id="css-questions">CSS Questions</h2>
+        <div class="formrow">
+          <div class="question-block">
+            <label for="css-q1-option">Can the CSS margin property accept negative values?</label>
+          </div>
+          <div class="answer">
+            <select id="css-q1-option" name="css-question1" required>
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="question-block">
+            <label for="css-q2-question">Which CSS property is used to change the visual order of individual flex items regardless of their source order?</label>
+          </div>
+          <div class="answer">
+            <textarea id="css-q2-question" name="css-question1" rows="10" cols="50"></textarea>
+          </div>
+        </div>
+      </section>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer>
+   <address>
+     <a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a><br/>
+     San Francisco<br/>
+     California<br/>
+     USA
+   </address>
+  </footer>
 </body>
 </html>
