@@ -1,7 +1,9 @@
 main {
-    width: 100%;
+    width: 1200px;
     height: 750px;
     background-color: black;
+    border: 25px solid black;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -13,9 +15,9 @@ main {
 
 #ground {
     width: 100%;
-    height: 450px;
-    background-color: brown;
-    transform: translateY(-60%);
+    height: 500px;
+    background-color: darkgreen;
+    transform: translateY(-85%);
 }
 #house {
     position: relative;
@@ -32,13 +34,16 @@ main {
 }
 
 #roof {
-    width: 520px;
+    width: 620px;
     height: 100px;
     background-color: darkslategrey;
     border: 5px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     top: 0;
-    left: -15px;
+    left: -65px;
     z-index: 1;
+    transform: translateY(-5%);
 }
 
 #chimney {
@@ -46,6 +51,8 @@ main {
     height: 75px;
     background-color: lightslategrey;
     border: 5px solid black;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     top: -70px;
     left: 300px;
     z-index: 0;
