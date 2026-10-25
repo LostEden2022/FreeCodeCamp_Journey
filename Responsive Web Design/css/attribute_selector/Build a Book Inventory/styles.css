@@ -1,3 +1,15 @@
 html {
+    box-sizing: border-box;
+}
 
+.read {
+    background-image: linear-gradient(to bottom, green 40px, white 60px);
+}
+
+.in-progress {
+    background-image: linear-gradient(to bottom, yellow 40px, white 60px);
+}
+
+.to-read {
+    background-image: linear-gradient(to bottom, red 40px, white 60px);
 }
