@@ -38,7 +38,7 @@ tr[class="to-read"] span[class="status"] {
 }
 
 span[class="status"],
-span[class="rate"] {
+span[class^="rate"] {
     width: 100px;
     height: 20px;
     padding: 2px 4px;
@@ -53,4 +53,6 @@ span[class^="rate"] > span {
     margin: 0 4px;
 }
 
-span
+span[class~="one"] {
+    background-image: linear-gradient(to right, white 6px, grey 5px)
+}
