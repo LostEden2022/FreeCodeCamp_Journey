@@ -2,6 +2,26 @@ html {
     box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    width: 800px;
+    padding: 0;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
 tr[class="read"] {
     background-image: linear-gradient(to top, darkgreen, white 1rem);
 }
@@ -20,39 +40,59 @@ span {
 }
 
 tr[class="read"] span[class="status"] {
+    color: white;
+    font-weight: bold;
     border: 1px solid green;
     border-radius: 20px;
-    background-image: linear-gradient(45deg, white 2px, darkgreen 8px)
+    background-image: linear-gradient(45deg, white 5px, darkgreen 8px)
 }
 
 tr[class="in-progress"] span[class="status"] {
+    color: white;
+    font-weight: bold;
     border: 1px solid darkorange;
     border-radius: 20px;
-    background-image: linear-gradient(45deg, white 2px, darkorange 8px)
+    background-image: linear-gradient(45deg, white 5px, darkorange 8px)
 }
 
 tr[class="to-read"] span[class="status"] {
+    color: white;
+    font-weight: bold;
     border: 1px solid red;
     border-radius: 20px;
-    background-image: linear-gradient(45deg, white 2px, darkred 8px)
+    background-image: linear-gradient(45deg, white 5px, darkred 8px)
 }
 
 span[class="status"],
 span[class^="rate"] {
     width: 100px;
     height: 20px;
-    padding: 2px 4px;
+    padding: 1px 2px;
 }
 
 span[class^="rate"] > span {
     width: 20px;
     height: 20px;
-    border: 1px solid yellow;
+    border: 1px solid black;
     border-radius: 50px;
-    background-color: yellow;
+    background-color: white;
     margin: 0 4px;
 }
 
-span[class~="one"] {
-    background-image: linear-gradient(to right, white 6px, grey 5px)
+span[class~="one"] > span:nth-child(1) {
+    background-image: linear-gradient(45deg, white 5px, yellow 5px);
+}
+
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2)
+{
+    background-image: linear-gradient(45deg, white 5px, yellow 5px);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(45deg, white 5px, yellow 5px);
+}
+
+*[lang="sp"] {
+    font-style: italic;
 }
