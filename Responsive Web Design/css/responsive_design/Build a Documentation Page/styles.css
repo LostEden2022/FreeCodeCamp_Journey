@@ -1,0 +1,6 @@
+@media min-width: 764px {
+    #navbar {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
