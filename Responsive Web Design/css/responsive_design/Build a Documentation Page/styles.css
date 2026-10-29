@@ -22,7 +22,6 @@ main {
     z-index: 1;
 }
 
-
 @media (max-width: 768px)  {
     #navbar {
         display: flex;
@@ -51,9 +50,10 @@ header {
     margin: 0;
 }
 
-
+nav header,
 a[href] {
-    text-decoration: none;
+    border: 0.5px solid lightslategrey;
+    padding: 20px 10px;
 }
 
 a[href]:link,
@@ -65,9 +65,8 @@ a[href]:hover{
 
 code {
     text-align: center;
-    text-indent: 20px;
-    background-color: #FFFFF384;
-    font-weight: normal;
-    padding: 5px;
+    background-color: lightgrey;
+    font-weight: lighter;
+    padding: 5px 30px;
     border-radius: 10px;
 }
