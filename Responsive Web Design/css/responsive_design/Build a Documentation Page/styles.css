@@ -4,14 +4,20 @@
 
 
 #navbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
     position: fixed;
-    top: 25px;
+    top: 30px;
+    font-size: 18px;
 }
 
 main {
-    position: relative;
+    display: inline-block;
+    position: absolute;
     top: 25px;
-    left: 250px;
+    left: 275px;
 }
 
 
@@ -22,15 +28,25 @@ main {
         flex-wrap: wrap;
         flex-direction: column;
         position: fixed;
-        top: 25px;
+        top: 30px;
+        font-size: 18px;
     }
 
     main {
         display: inline-block;
         position: absolute;
-        top: 25px;
-        left: 250px;
+        top: 30px;
+        left: 275px;
     }
 
 }
 
+a[href] {
+    text-decoration: none;
+}
+
+a[href]:link,
+a[href]:visited,
+a[href]:hover {
+    color: black;
+}
