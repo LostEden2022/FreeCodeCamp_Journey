@@ -229,7 +229,10 @@ body {
     left: 10%;
 }
 
-
+.fb4a {
+    border-top: 5vh solid transparent;
+    border-left: 8vw solid var(--building-color1);
+}
 
 .fb4b {
     width: 100%;
@@ -253,6 +256,19 @@ body {
     background-color: var(--building-color2);
     position: relative;
     right: 10%;
+    background: repeating-linear-gradient(
+            var(--building-color2),
+            var(--building-color2) 5%,
+            transparent 5%,
+            transparent 10%
+    ),
+    repeating-linear-gradient(
+            90deg,
+            var(--building-color2),
+            var(--building-color2) 12%,
+            var(--window-color2) 12%,
+            var(--window-color2) 44%
+    );
 }
 
 .fb6 {
