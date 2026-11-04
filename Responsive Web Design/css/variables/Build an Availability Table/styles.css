@@ -1,0 +1,46 @@
+:root {
+    --color0: red;
+    --color1: orange;
+    --color2: yellow;
+    --color3: green;
+    --color4: blue;
+    --color5: violet;
+    --solid-border: black;
+    --dash-border: darkgrey;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.available0 {
+    background-color: var(--color0);
+}
+
+.available1 {
+    background-color: var(--color1);
+}
+
+.available2 {
+    background-color: var(--color2);
+}
+
+.available3 {
+    background-color: var(--color3);
+}
+
+.available4 {
+    background-color: var(--color4);
+}
+
+.available5 {
+    background-color: var(--color5);
+}
+.sharp {
+    border-bottom: 2px solid var(--solid-border);
+}
+
+.flat {
+    border-bottom: 2px solid var(--dash-border);
+}
