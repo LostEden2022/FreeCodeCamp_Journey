@@ -25,15 +25,22 @@ main {
 
 caption {
     font-size: 1.25rem;
-    font-weight: bold;
+}
+
+td {
+    width: 200px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
 }
 
 .sharp td {
-    border-bottom: var(--solid-border);
+    border-bottom: 2px solid var(--solid-border);
 }
 
 .half td {
-    border-bottom: var(--dashed-border);
+    border-bottom: 2px dashed var(--dashed-border);
 }
 
 .available-0 {
@@ -60,7 +67,23 @@ caption {
     background-color: var(--color5);
 }
 
+#legend {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+span {
+    font-weight: bold;
+}
+
 #legend-gradient {
+    width: 150px;
+    height: 20px;
+    border: 1px solid black;
     background-image: linear-gradient(
             90deg,
             var(--color0) 0% 17%,
