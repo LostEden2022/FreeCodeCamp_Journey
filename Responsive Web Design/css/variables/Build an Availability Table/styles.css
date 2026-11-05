@@ -6,23 +6,28 @@
     --color4: blue;
     --color5: violet;
     --solid-border: black;
-    --dash-border: darkgrey;
+    --dashed-border: darkgrey;
 }
 
 * {
     box-sizing: border-box;
 }
 
-main,
-div {
+main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 80%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
 }
+
+caption {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 
 .available-0 {
     background-color: var(--color0);
@@ -47,10 +52,10 @@ div {
 .available-5 {
     background-color: var(--color5);
 }
-.sharp > td {
+tr[class="sharp"] > td {
     border-bottom: 2px solid var(--solid-border);
 }
 
-.flat > td{
-    border-bottom: 2px dashed var(--dash-border);
+.half > td {
+    border-bottom: 2px dashed var(--dashed-border);
 }
