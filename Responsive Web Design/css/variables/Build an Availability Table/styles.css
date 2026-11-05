@@ -103,3 +103,16 @@ span {
             var(--color5) 85% 100%
     );
 }
+
+@media (max-width: 768px) {
+    :root {
+        --color0: #FFFFFFFF;
+        --color1: #EE7777FF;
+        --color2: #B65353FF;
+        --color3: #943838;
+        --color4: #671919;
+        --color5: #650505;
+        --solid-border: #000000FF;
+        --dashed-border: #313030FF;
+    };
+}
