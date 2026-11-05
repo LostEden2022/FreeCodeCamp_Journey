@@ -13,6 +13,16 @@
     box-sizing: border-box;
 }
 
+main,
+div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
 
 .available-0 {
     background-color: var(--color0);
@@ -37,10 +47,10 @@
 .available-5 {
     background-color: var(--color5);
 }
-.sharp {
+.sharp > td {
     border-bottom: 2px solid var(--solid-border);
 }
 
-.flat {
-    border-bottom: 2px solid var(--dash-border);
+.flat > td{
+    border-bottom: 2px dashed var(--dash-border);
 }
