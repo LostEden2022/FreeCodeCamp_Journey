@@ -28,6 +28,13 @@ caption {
     font-weight: bold;
 }
 
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-bottom: var(--dashed-border);
+}
 
 .available-0 {
     background-color: var(--color0);
@@ -51,11 +58,4 @@ caption {
 
 .available-5 {
     background-color: var(--color5);
-}
-tr[class="sharp"] > td {
-    border-bottom: 2px solid var(--solid-border);
-}
-
-.half > td {
-    border-bottom: 2px dashed var(--dashed-border);
 }
