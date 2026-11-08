@@ -1,0 +1,23 @@
+:root {
+    --text-main: black;
+    --article-background: ghostwhite;
+    --sub-article-background: lightgrey;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title,
+.feature-article,
+.secondary-article,
+.small-article1,
+.small-article2,
+.small-article3,
+.cover-image {
+    display: grid;
+}
