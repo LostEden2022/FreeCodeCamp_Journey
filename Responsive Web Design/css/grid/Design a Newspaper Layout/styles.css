@@ -1,6 +1,6 @@
 :root {
     --text-main: black;
-    --article-background: ghostwhite;
+    --main-background: ghostwhite;
     --sub-article-background: lightgrey;
 }
 
@@ -22,9 +22,58 @@
         "secondary-article secondary-article cover-image"
         "small-article1 small-article2 small-article3"
     ;
-    gap: 10px 20px;
+    gap: 10px 10px;
+    place-items: center;
+}
+
+.title {
+    grid-area: title;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+.feature-article {
+    grid-area: feature-article;
+}
+
+.secondary-article {
+    grid-area: secondary-article;
 }
 
 .cover-image {
-    max-width: 100%
+    grid-area: cover-image;
+}
+
+.cover-image img{
+    max-width: 100%;
+    height: 275px;
+    padding: 20px;
+}
+
+.small-article1,
+.small-article2,
+.small-article3 {
+    background: linear-gradient(
+            180deg,
+            white 30%,
+            whitesmoke 60%,
+            var(--sub-article-background) 100%
+    );
+    border-radius: 10px;
+    padding: 15px
+}
+
+.small-article1 {
+    grid-area: small-article1;
+}
+
+.small-article2 {
+    grid-area: small-article2;
+}
+
+.small-article3 {
+    grid-area: small-article3;
 }
