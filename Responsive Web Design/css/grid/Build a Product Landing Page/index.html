@@ -3,79 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Build a Product Landing Page</title>
+    <title>Guitar Hub | Product Landing Page</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header id="header">
-    <img id="header-img" src="Guitar_hub_image.jpeg" alt="store-symbol"/>
-    <span id="store-name">Guitar Hub</span>
+<header id="header">
+    <div class="logo-group">
+        <img id="header-img" src="Guitar_hub_image.jpeg" alt="Guitar Hub store symbol"/>
+        <span id="store-name">Guitar Hub</span>
+    </div>
     <nav id="nav-bar">
-      <a class="nav-link" href="#guitar">Guitar</a>
-      <a class="nav-link" href="#">Bass</a>
-      <a class="nav-link" href="#">Drums</a>
-      <a class="nav-link" href="#">Amp and Effects Modelers</a>
+        <a class="nav-link" href="#guitar">Guitar</a>
+        <a class="nav-link" href="#bass">Bass</a>
+        <a class="nav-link" href="#drums">Drums</a>
+        <a class="nav-link" href="#amp_effects_modelers">Amp &amp; Effects</a>
     </nav>
-  </header>
-  <main>
-  <h1>Your Ultimate Hub for Guitars, Amps, and Tone.</h1>
-  <p>From bedroom jammers to world-touring pros, we supply the gear, the passion, and the unbeatable prices to fuel your sound.</p>
-    <form id="form">
-        <label id=email>
-        <input  type="email" name="email" placeholder="Enter your e-mail address"/>
-        </label>
-        <input type="submit" name="get-started" value="Get Started"/>
-    </form>
-  <section>
-      <img src="delivery.jpeg" alt="international and domestic delivery icon"/>
-      <h2>Domestic & International Delivery:</h2>
-      <p>Not completely in love with your tone? Return it within 30 days for a full refund or exchange. No stress, no complicated hoops to jump through.</p>
-  </section>
-  <section>
-      <img src="hassle-free.jpeg" alt="guaranteed returns icon"/>
-      <h2>Guaranteed Returns (Hassle-Free):</h2>
-      <p>Fast, secure shipping right to your doorstep, anywhere in the world. We partner with top-tier global couriers to ensure your gear arrives safe, sound, and ready to rock.</p>
-  </section>
-  <section>
-      <img src="low-prices.jpeg" alt="low-price icon"/>
-      <h2>Guaranteed Low Prices:</h2>
-      <p>Found a lower price elsewhere? We’ll match it. We are committed to giving you the best deals on the market without compromising on quality.</p>
-  </section>
-  <section>
-      <img src="inspected.jpeg" alt="inspected and QA icon"/>
-      <h2>Expertly Inspected Gear</h2>
-      <p>Every single instrument is checked and set up by experienced guitar technicians before it leaves our warehouse.</p>
-  </section>
-  <video width="640" height="360" controls poster="thumbnail.jpeg">
-      <source src="my-video.mp4" type="video/mp4">
-      <source src="my-video.webm" type="video/webm">
-      Your browser does not support the video tag.
-  </video>
-  <section>
-      <img src="" alt="guitar-pic"/>
-      <h2><a id="guitar" target="_blank">Guitar</a></h2>
-  </section>
-  <section>
-      <img src="" alt="bass-pic"/>
-      <h2><a id="bass" target="_blank">Bass</a></h2>
-  </section>
-  <section>
-      <img src="" alt=drumset-pic""/>
-      <h2><a id="drums" target="_blank">Drums</a></h2>
-  </section>
-  <section>
-      <img src="" alt="quadcortex-pic"/>
-      <h2><a id="amp_effects_modelers" target="_blank">Amp and Effects Modelers</a></h2>
-  </section>
-  </main>
-  <footer>
-    <a href="" target="_blank">Privacy</a>
-    <a href="" target="_blank">Terms</a>
-    <a href="" target="_blank">Contract</a>
-        <address>
-            123 Broke Tree Lane, Austin, TX 78701
-        </address>
-    <p>&copy; 2026 Your Name or Company. All rights reserved.</p>
-  </footer>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Your Ultimate Hub for Guitars, Amps, and Tone.</h1>
+        <p>From bedroom jammers to world-touring pros, we supply the gear, the passion, and the unbeatable prices to fuel your sound.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email" class="sr-only">Email Address</label>
+            <input id="email" type="email" name="email" placeholder="Enter your e-mail address" required/>
+            <input id="submit" type="submit" value="Get Started"/>
+        </form>
+    </section>
+
+
+    <section class="guarantees-container">
+        <div class="core-guarantees">
+            <img class="core-guarantees-img" src="delivery.jpeg" alt="international and domestic delivery icon"/>
+            <div>
+                <h2>Domestic & International Delivery</h2>
+                <p>Fast, secure shipping right to your doorstep, anywhere in the world. We partner with top-tier global couriers to ensure your gear arrives safe, sound, and ready to rock.</p>
+            </div>
+        </div>
+
+        <div class="core-guarantees">
+            <img class="core-guarantees-img" src="hassle-free.jpeg" alt="guaranteed returns icon"/>
+            <div>
+                <h2>Guaranteed Returns (Hassle-Free)</h2>
+                <p>Not completely in love with your tone? Return it within 30 days for a full refund or exchange. No stress, no complicated hoops to jump through.</p>
+            </div>
+        </div>
+
+        <div class="core-guarantees">
+            <img class="core-guarantees-img" src="low-prices.jpeg" alt="low-price icon"/>
+            <div>
+                <h2>Guaranteed Low Prices</h2>
+                <p>Found a lower price elsewhere? We’ll match it. We are committed to giving you the best deals on the market without compromising on quality.</p>
+            </div>
+        </div>
+
+        <div class="core-guarantees">
+            <img class="core-guarantees-img" src="inspected.jpeg" alt="inspected and QA icon"/>
+            <div>
+                <h2>Expertly Inspected Gear</h2>
+                <p>Every single instrument is checked and set up by experienced guitar technicians before it leaves our warehouse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video id="video" controls poster="thumbnail.jpeg">
+            <source src="my-video.mp4" type="video/mp4">
+            <source src="my-video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Product Categories Grid -->
+    <section class="categories-grid">
+        <div class="category-card" id="guitar">
+            <img src="guitar-placeholder.jpg" alt="Electric and acoustic guitars"/>
+            <h2><a href="#guitar">Guitar</a></h2>
+        </div>
+        <div class="category-card" id="bass">
+            <img src="bass-placeholder.jpg" alt="Bass guitars"/>
+            <h2><a href="#bass">Bass</a></h2>
+        </div>
+        <div class="category-card" id="drums">
+            <img src="drumset-placeholder.jpg" alt="Acoustic and electronic drumsets"/>
+            <h2><a href="#drums">Drums</a></h2>
+        </div>
+        <div class="category-card" id="amp_effects_modelers">
+            <img src="quadcortex-placeholder.jpg" alt="Amp and effects modelers"/>
+            <h2><a href="#amp_effects_modelers">Amp &amp; Effects Modelers</a></h2>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+    </div>
+    <address>123 Broke Tree Lane, Austin, TX 78701</address>
+    <p>&copy; 2026 Guitar Hub. All rights reserved.</p>
+</footer>
 </body>
 </html>
