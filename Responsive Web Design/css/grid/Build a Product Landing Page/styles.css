@@ -6,19 +6,31 @@
     box-sizing: border-box;
 }
 
+body {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    place-items: flex-start;
+    padding: 15px;
+    border: 2px solid black;
+}
+
 #header {
+    position: relative;
     display: grid;
-    grid-template-columns: 5% 10% 85%;
+    grid-template-columns: 15% 25% 75%;
     grid-template-rows: auto;
     grid-template-areas:
         "header-img store-name nav-link nav-link nav-link nav-link"
     ;
-    gap: 10px 10px;
     place-items: center;
 }
 
 #header-img {
-    width: 150px;
+    width: 125px;
     height: auto;
     object-fit: cover;
     object-position: center;
