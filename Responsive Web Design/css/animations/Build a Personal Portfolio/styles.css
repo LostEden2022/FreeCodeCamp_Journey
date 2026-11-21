@@ -9,13 +9,61 @@
 body {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    place-items: center;
+    margin: 0 auto;
+    border: 2px black solid;
 }
 
-#nav-bar {
+#navbar {
     position: fixed;
+    top: 0;
     z-index: 999;
+    padding: 20px;
+    border: 2px black solid;
 }
 
-@media {
+#welcome-section {
+    padding: 20px;
+    margin: 50px;
+    border: 2px black solid;
+}
 
+#project-section {
+    padding: 20px;
+    margin: 50px;
+    border: 2px black solid;
+}
+
+#social-profiles {
+    padding: 20px;
+    margin: 50px;
+    border: 2px black solid;
+}
+
+footer {
+    padding: 20px;
+    margin: 50px;
+    border: 2px black solid;
+}
+
+@media (max-width: 768px)  {
+    #navbar {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        padding: 20px;
+        border: 2px black solid;
+    }
+
+
+    main {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 275px;
+        z-index: 1;
+    }
 }
