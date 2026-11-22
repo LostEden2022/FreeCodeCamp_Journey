@@ -23,7 +23,6 @@ body {
     width: 100%;
     padding: 15px;
     background: lightslategrey;
-    border: 2px black solid;
 }
 
 .nav-link {
@@ -36,16 +35,17 @@ body {
 
 .nav-link:link,
 .nav-link:hover,
+.nav-link:active,
 .nav-link:visited {
     text-decoration: none;
 }
 
-/*Main Content Styling */
 main {
     position: relative;
     top: 100px;
 }
 
+/*Welcome Styling */
 #welcome-section {
     padding: 10px;
     margin: 20px;
