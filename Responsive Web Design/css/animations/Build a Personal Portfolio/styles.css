@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     background: lightslategrey;
 }
 
@@ -40,26 +40,32 @@ body {
     text-decoration: none;
 }
 
+/*Main Styling */
 main {
     position: relative;
-    top: 100px;
+    top: 50px;
+    background-color: #333333;
+    color: black;
+    font-family: Open Sans, Sans-Serif, serif;
 }
 
 /*Welcome Styling */
 #welcome-section {
-    padding: 10px;
-    margin: 20px;
-    border: 2px black solid;
+    padding: 300px 200px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    background: linear-gradient(50deg, white 30%, #333333 70%);
 }
 
 #project-section {
-    padding: 10px;
+    padding: 0 10px;
     margin: 20px;
     border: 2px black solid;
 }
 
 #social-profiles {
-    padding: 10px;
+    padding: 0 10px;
     margin: 20px;
     border: 2px black solid;
 }
@@ -83,7 +89,7 @@ footer {
         width: 100%;
         height: auto;
         padding: 15px;
-        background: black;
+        background: darkslategray;
         opacity: 60%;
         border: 2px black solid;
     }
@@ -93,5 +99,22 @@ footer {
         font-family: Open Sans, Sans-Serif, serif;
         font-size: 1.25rem;
         font-weight: 600;
+    }
+    /*Main Styling */
+    main {
+        position: relative;
+        top: 50px;
+        background-color: ghostwhite;
+        color: white;
+        font-family: Open Sans, Sans-Serif, serif;
+    }
+
+    /*Welcome Styling */
+    #welcome-section {
+        padding: 200px 100px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: left;
+        background: linear-gradient(50deg, #333333 30%, ghostwhite 70%);
     }
 }
