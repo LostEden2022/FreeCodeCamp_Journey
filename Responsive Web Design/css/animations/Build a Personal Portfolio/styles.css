@@ -22,12 +22,13 @@ body {
     justify-content: flex-end;
     width: 100%;
     padding: 15px 0;
-    background: lightslategrey;
+    background: #333333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link {
     padding: 0 10px;
-    color: black;
+    color: ghostwhite;
     font-family: Open Sans, Sans-Serif, serif;
     font-size: 1.25rem;
     font-weight: 600;
@@ -44,30 +45,52 @@ body {
 main {
     position: relative;
     top: 50px;
-    background-color: #333333;
+    background-color: white;
     color: black;
     font-family: Open Sans, Sans-Serif, serif;
 }
 
 /*Welcome Styling */
 #welcome-section {
-    padding: 300px 200px;
+    padding: 200px 100px;
     font-size: 2rem;
     font-weight: 400;
     text-align: left;
-    background: linear-gradient(50deg, white 30%, #333333 70%);
+    background: linear-gradient(50deg, ghostwhite 40%, #c0bcbc 90%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+/*Welcome Styling */
 #project-section {
-    padding: 0 10px;
-    margin: 20px;
-    border: 2px black solid;
+    padding: 50px 100px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    background: linear-gradient(230deg, ghostwhite 40%, #c0bcbc 90%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background: ghostwhite;
+
 }
 
 #social-profiles {
     padding: 0 10px;
     margin: 20px;
     border: 2px black solid;
+}
+
+h2 {
+    padding: 50px 0;
 }
 
 footer {
@@ -87,11 +110,9 @@ footer {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        height: auto;
-        padding: 15px;
-        background: darkslategray;
-        opacity: 60%;
-        border: 2px black solid;
+        padding: 15px 0;
+        background: darkslategrey;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
     .nav-link {
         padding: 0 10px;
@@ -105,7 +126,7 @@ footer {
         position: relative;
         top: 50px;
         background-color: ghostwhite;
-        color: white;
+        color: black;
         font-family: Open Sans, Sans-Serif, serif;
     }
 
@@ -115,6 +136,7 @@ footer {
         font-size: 1.5rem;
         font-weight: 400;
         text-align: left;
-        background: linear-gradient(50deg, #333333 30%, ghostwhite 70%);
+        background: linear-gradient(50deg, #333333 10%, ghostwhite 40%);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 }
