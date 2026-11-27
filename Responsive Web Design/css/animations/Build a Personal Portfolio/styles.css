@@ -53,36 +53,43 @@ main {
 /*Welcome Styling */
 #welcome-section {
     padding: 200px 100px;
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 600;
     background: linear-gradient(50deg, ghostwhite 40%, #c0bcbc 90%);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/*Welcome Styling */
+/*Project Styling */
+#project-section h2 {
+    grid-column: 1 / -1;
+    padding-bottom: 0;
+}
+
 #project-section {
-    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 100px 100px;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: left;
     background: linear-gradient(230deg, ghostwhite 40%, #c0bcbc 90%);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .project-tile {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #e0e0e0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #c0bcbc;
     border-radius: 20px;
     background: ghostwhite;
-
 }
 
+/*Social Styling */
 #social-profiles {
     padding: 0 10px;
     margin: 20px;
